@@ -1,0 +1,216 @@
+\hypertarget{classProfileWidget}{}\section{Profile\+Widget Class Reference}
+\label{classProfileWidget}\index{Profile\+Widget@{Profile\+Widget}}
+Inheritance diagram for Profile\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProfileWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProfileWidget_a2fcfd867268b4ca8d3d8db067ad770df}{Profile\+Widget} (Wt\+::\+W\+Container\+Widget $\ast$parent=0, \hyperlink{classAccount}{Account} $\ast$account=0, \hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$main=0)
+\begin{DoxyCompactList}\small\item\em Profile Widget constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classProfileWidget_a6c093ffd95dedf4814b10b53865784ca}{update} ()
+\begin{DoxyCompactList}\small\item\em Update function, clears the widget and re-\/populates with elements of the profile screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classProfileWidget_a07bcf16818fe49254c5aa80eefdc68b8}{update\+First\+Name} ()
+\begin{DoxyCompactList}\small\item\em update\+First\+Name function, called if user puts in a new first name, calls the setter function of \hyperlink{classAccount}{Account} screen \end{DoxyCompactList}\item 
+void \hyperlink{classProfileWidget_a990300c69c3177fea08ae6af21d33945}{update\+Last\+Name} ()
+\begin{DoxyCompactList}\small\item\em update\+Last\+Name function, called if user puts in a new last name, calls the setter function of \hyperlink{classAccount}{Account} screen \end{DoxyCompactList}\item 
+void \hyperlink{classProfileWidget_a9dff9212fcc936cc5a77db50b3675adb}{show\+Password\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em show\+Password\+Dialog function, called if user chooses to update their password. Opens a W\+Dialog box asking them to confirm their current password, and choose a new password, goes through same validation process as the create account page \end{DoxyCompactList}\item 
+bool \hyperlink{classProfileWidget_a68729c760462780f9b1bf5e9dac739db}{check\+Valid\+Password} (std\+::string pass)
+\begin{DoxyCompactList}\small\item\em check\+Valid\+Password function, ensures that the password that the user has entered is the password connected to their account \end{DoxyCompactList}\item 
+void \hyperlink{classProfileWidget_a0b822b0db6c6e3194d61b5cd427dff64}{update\+Password} ()
+\begin{DoxyCompactList}\small\item\em update\+Password function, called upon submission of the update password dialog box. Validates password and sets the \hyperlink{classAccount}{Account}\textquotesingle{}s new password using \hyperlink{classAccount}{Account} setter \end{DoxyCompactList}\item 
+void \hyperlink{classProfileWidget_a1e6942fd023d790cc5c2bcb26fa5a745}{upload\+Profile\+Picture} (std\+::string file)
+\begin{DoxyCompactList}\small\item\em upload\+Profile\+Picture function, called if user uploads a profile picture, saves the file in a non-\/temporary location \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$ {\bfseries parent\+\_\+}\hypertarget{classProfileWidget_a56c218a697d3523f5a531ad035d927ed}{}\label{classProfileWidget_a56c218a697d3523f5a531ad035d927ed}
+
+\item 
+\hyperlink{classAccount}{Account} $\ast$ {\bfseries account\+\_\+}\hypertarget{classProfileWidget_aecefc74b58e1451e684636ba036a6f2f}{}\label{classProfileWidget_aecefc74b58e1451e684636ba036a6f2f}
+
+\item 
+Wt\+::\+W\+In\+Place\+Edit $\ast$ {\bfseries editable\+First\+Name\+\_\+}\hypertarget{classProfileWidget_a2b69c8124758bad87a3fbf02eeaa040b}{}\label{classProfileWidget_a2b69c8124758bad87a3fbf02eeaa040b}
+
+\item 
+Wt\+::\+W\+In\+Place\+Edit $\ast$ {\bfseries editable\+Last\+Name\+\_\+}\hypertarget{classProfileWidget_a5df00d4c05fd6ed97e633480507c17db}{}\label{classProfileWidget_a5df00d4c05fd6ed97e633480507c17db}
+
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries update\+Password\+\_\+}\hypertarget{classProfileWidget_a6bee4c694aa7feae407acaa78288746c}{}\label{classProfileWidget_a6bee4c694aa7feae407acaa78288746c}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries password\+Dialog\+\_\+}\hypertarget{classProfileWidget_aec70048f76904c94c7d20cf9a60f5ad6}{}\label{classProfileWidget_aec70048f76904c94c7d20cf9a60f5ad6}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries current\+Pass\+\_\+}\hypertarget{classProfileWidget_a6c15ca5e77a019a4c9ec63c6065dc669}{}\label{classProfileWidget_a6c15ca5e77a019a4c9ec63c6065dc669}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries new\+Pass\+\_\+}\hypertarget{classProfileWidget_ae672f881b80a6f14f05cff1429faf609}{}\label{classProfileWidget_ae672f881b80a6f14f05cff1429faf609}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries confirm\+New\+Pass\+\_\+}\hypertarget{classProfileWidget_a30033dd6bf1ea9dacb4e51e91f5a6286}{}\label{classProfileWidget_a30033dd6bf1ea9dacb4e51e91f5a6286}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries password\+Error\+\_\+}\hypertarget{classProfileWidget_abcac84401d90ac8447f3cb11951cbd76}{}\label{classProfileWidget_abcac84401d90ac8447f3cb11951cbd76}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries password\+Success\+\_\+}\hypertarget{classProfileWidget_a83350d03805517f9564bada67140d4f6}{}\label{classProfileWidget_a83350d03805517f9564bada67140d4f6}
+
+\item 
+Wt\+::\+W\+File\+Upload $\ast$ {\bfseries pic\+Upload\+\_\+}\hypertarget{classProfileWidget_a3297479e7efd5b09b1bdda6251ec08aa}{}\label{classProfileWidget_a3297479e7efd5b09b1bdda6251ec08aa}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries profile\+Pic\+Out\+Message\+\_\+}\hypertarget{classProfileWidget_afc047a157b120548478c90899668d6ba}{}\label{classProfileWidget_afc047a157b120548478c90899668d6ba}
+
+\item 
+bool {\bfseries file\+Too\+Large} = false\hypertarget{classProfileWidget_a1349cc67751fd8b5cbb6f0256fda652d}{}\label{classProfileWidget_a1349cc67751fd8b5cbb6f0256fda652d}
+
+\item 
+Wt\+::\+W\+Validator $\ast$ {\bfseries input\+Not\+Empty\+\_\+}\hypertarget{classProfileWidget_acef4ab69bb13e9c505e564aa82b1bc52}{}\label{classProfileWidget_acef4ab69bb13e9c505e564aa82b1bc52}
+
+\item 
+Wt\+::\+W\+Length\+Validator $\ast$ {\bfseries password\+Length\+Validator\+\_\+}\hypertarget{classProfileWidget_aaa2506199f35edd1dd02389b020da70f}{}\label{classProfileWidget_aaa2506199f35edd1dd02389b020da70f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Profile\+Widget@{Profile\+Widget}!Profile\+Widget@{Profile\+Widget}}
+\index{Profile\+Widget@{Profile\+Widget}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{Profile\+Widget(\+Wt\+::\+W\+Container\+Widget $\ast$parent=0, Account $\ast$account=0, Welcome\+Screen $\ast$main=0)}{ProfileWidget(Wt::WContainerWidget *parent=0, Account *account=0, WelcomeScreen *main=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Profile\+Widget\+::\+Profile\+Widget (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{{\bf Account} $\ast$}]{account = {\ttfamily 0}, }
+\item[{{\bf Welcome\+Screen} $\ast$}]{main = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classProfileWidget_a2fcfd867268b4ca8d3d8db067ad770df}{}\label{classProfileWidget_a2fcfd867268b4ca8d3d8db067ad770df}
+
+
+Profile Widget constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$parent} & is a pointer the the containerwidget that stores this widget \\
+\hline
+{\em $\ast$main} & is a pointer to the app\textquotesingle{}s welcome screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Profile\+Widget@{Profile\+Widget}!check\+Valid\+Password@{check\+Valid\+Password}}
+\index{check\+Valid\+Password@{check\+Valid\+Password}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{check\+Valid\+Password(std\+::string pass)}{checkValidPassword(std::string pass)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Profile\+Widget\+::check\+Valid\+Password (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{pass}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a68729c760462780f9b1bf5e9dac739db}{}\label{classProfileWidget_a68729c760462780f9b1bf5e9dac739db}
+
+
+check\+Valid\+Password function, ensures that the password that the user has entered is the password connected to their account 
+
+\begin{DoxyReturn}{Returns}
+bool true if the password is correct, false otherwise 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!show\+Password\+Dialog@{show\+Password\+Dialog}}
+\index{show\+Password\+Dialog@{show\+Password\+Dialog}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{show\+Password\+Dialog()}{showPasswordDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::show\+Password\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a9dff9212fcc936cc5a77db50b3675adb}{}\label{classProfileWidget_a9dff9212fcc936cc5a77db50b3675adb}
+
+
+show\+Password\+Dialog function, called if user chooses to update their password. Opens a W\+Dialog box asking them to confirm their current password, and choose a new password, goes through same validation process as the create account page 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!update@{update}}
+\index{update@{update}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProfileWidget_a6c093ffd95dedf4814b10b53865784ca}{}\label{classProfileWidget_a6c093ffd95dedf4814b10b53865784ca}
+
+
+Update function, clears the widget and re-\/populates with elements of the profile screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!update\+First\+Name@{update\+First\+Name}}
+\index{update\+First\+Name@{update\+First\+Name}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{update\+First\+Name()}{updateFirstName()}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::update\+First\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a07bcf16818fe49254c5aa80eefdc68b8}{}\label{classProfileWidget_a07bcf16818fe49254c5aa80eefdc68b8}
+
+
+update\+First\+Name function, called if user puts in a new first name, calls the setter function of \hyperlink{classAccount}{Account} screen 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!update\+Last\+Name@{update\+Last\+Name}}
+\index{update\+Last\+Name@{update\+Last\+Name}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Last\+Name()}{updateLastName()}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::update\+Last\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a990300c69c3177fea08ae6af21d33945}{}\label{classProfileWidget_a990300c69c3177fea08ae6af21d33945}
+
+
+update\+Last\+Name function, called if user puts in a new last name, calls the setter function of \hyperlink{classAccount}{Account} screen 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!update\+Password@{update\+Password}}
+\index{update\+Password@{update\+Password}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Password()}{updatePassword()}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::update\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a0b822b0db6c6e3194d61b5cd427dff64}{}\label{classProfileWidget_a0b822b0db6c6e3194d61b5cd427dff64}
+
+
+update\+Password function, called upon submission of the update password dialog box. Validates password and sets the \hyperlink{classAccount}{Account}\textquotesingle{}s new password using \hyperlink{classAccount}{Account} setter 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Profile\+Widget@{Profile\+Widget}!upload\+Profile\+Picture@{upload\+Profile\+Picture}}
+\index{upload\+Profile\+Picture@{upload\+Profile\+Picture}!Profile\+Widget@{Profile\+Widget}}
+\subsubsection[{\texorpdfstring{upload\+Profile\+Picture(std\+::string file)}{uploadProfilePicture(std::string file)}}]{\setlength{\rightskip}{0pt plus 5cm}void Profile\+Widget\+::upload\+Profile\+Picture (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProfileWidget_a1e6942fd023d790cc5c2bcb26fa5a745}{}\label{classProfileWidget_a1e6942fd023d790cc5c2bcb26fa5a745}
+
+
+upload\+Profile\+Picture function, called if user uploads a profile picture, saves the file in a non-\/temporary location 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & of the temporary file location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Profile\+Widget.\+h\item 
+src/\hyperlink{ProfileWidget_8cpp}{Profile\+Widget.\+cpp}\end{DoxyCompactItemize}

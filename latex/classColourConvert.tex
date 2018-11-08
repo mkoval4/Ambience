@@ -1,0 +1,95 @@
+\hypertarget{classColourConvert}{}\section{Colour\+Convert Class Reference}
+\label{classColourConvert}\index{Colour\+Convert@{Colour\+Convert}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static struct \hyperlink{structxy}{xy} $\ast$ \hyperlink{classColourConvert_a16ccfb2d7b81c54e46f9a3b827b7c8c2}{rgb2xy} (float red, float green, float blue)
+\begin{DoxyCompactList}\small\item\em R\+GB to XY converter. \end{DoxyCompactList}\item 
+static struct \hyperlink{structrgb}{rgb} $\ast$ \hyperlink{classColourConvert_a9540a0b33ca2703355f9dd0629fc1cd2}{xy2rgb} (float x, float y, float brightness)
+\begin{DoxyCompactList}\small\item\em XY to R\+GB converter. \end{DoxyCompactList}\item 
+static struct \hyperlink{structrgb}{rgb} $\ast$ \hyperlink{classColourConvert_a27e116384a459a5e2622ee37ab72103d}{hsv2rgb} (float hue, float sat, float bri)
+\begin{DoxyCompactList}\small\item\em Hue Sat Bri to R\+GB converter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Colour\+Convert@{Colour\+Convert}!hsv2rgb@{hsv2rgb}}
+\index{hsv2rgb@{hsv2rgb}!Colour\+Convert@{Colour\+Convert}}
+\subsubsection[{\texorpdfstring{hsv2rgb(float hue, float sat, float bri)}{hsv2rgb(float hue, float sat, float bri)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf rgb} $\ast$ Colour\+Convert\+::hsv2rgb (
+\begin{DoxyParamCaption}
+\item[{float}]{hue, }
+\item[{float}]{sat, }
+\item[{float}]{bri}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classColourConvert_a27e116384a459a5e2622ee37ab72103d}{}\label{classColourConvert_a27e116384a459a5e2622ee37ab72103d}
+
+
+Hue Sat Bri to R\+GB converter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hue} & is the Hue component of the colour \\
+\hline
+{\em sat} & is the Sat component of the colour \\
+\hline
+{\em bri} & is the Brightness value of the light\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct rgb containing R\+GB value representation of parameters 
+\end{DoxyReturn}
+\index{Colour\+Convert@{Colour\+Convert}!rgb2xy@{rgb2xy}}
+\index{rgb2xy@{rgb2xy}!Colour\+Convert@{Colour\+Convert}}
+\subsubsection[{\texorpdfstring{rgb2xy(float red, float green, float blue)}{rgb2xy(float red, float green, float blue)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf xy} $\ast$ Colour\+Convert\+::rgb2xy (
+\begin{DoxyParamCaption}
+\item[{float}]{r, }
+\item[{float}]{g, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classColourConvert_a16ccfb2d7b81c54e46f9a3b827b7c8c2}{}\label{classColourConvert_a16ccfb2d7b81c54e46f9a3b827b7c8c2}
+
+
+R\+GB to XY converter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & is the red component of the colour \\
+\hline
+{\em g} & is the green component of the colour \\
+\hline
+{\em b} & is the blue component of the colour\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct xy containing XY value representation of parameters 
+\end{DoxyReturn}
+\index{Colour\+Convert@{Colour\+Convert}!xy2rgb@{xy2rgb}}
+\index{xy2rgb@{xy2rgb}!Colour\+Convert@{Colour\+Convert}}
+\subsubsection[{\texorpdfstring{xy2rgb(float x, float y, float brightness)}{xy2rgb(float x, float y, float brightness)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf rgb} $\ast$ Colour\+Convert\+::xy2rgb (
+\begin{DoxyParamCaption}
+\item[{float}]{inputX, }
+\item[{float}]{inputY, }
+\item[{float}]{brightness}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classColourConvert_a9540a0b33ca2703355f9dd0629fc1cd2}{}\label{classColourConvert_a9540a0b33ca2703355f9dd0629fc1cd2}
+
+
+XY to R\+GB converter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inputX} & is the X component of the colour \\
+\hline
+{\em inputY} & is the Y component of the colour \\
+\hline
+{\em brightness} & is the brightness value of the light\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct rgb containing R\+GB value representation of parameters 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Colour\+Convert.\+h\item 
+src/\hyperlink{ColourConvert_8cpp}{Colour\+Convert.\+cpp}\end{DoxyCompactItemize}

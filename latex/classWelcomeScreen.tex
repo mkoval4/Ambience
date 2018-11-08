@@ -1,0 +1,254 @@
+\hypertarget{classWelcomeScreen}{}\section{Welcome\+Screen Class Reference}
+\label{classWelcomeScreen}\index{Welcome\+Screen@{Welcome\+Screen}}
+Inheritance diagram for Welcome\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWelcomeScreen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWelcomeScreen_a9d614d7c0a65f5f161fdd62016cccb02}{Welcome\+Screen} (Wt\+::\+W\+Container\+Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Main Screen constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_a7301f3941c1ff0caa7045329c71c41a7}{handle\+Internal\+Path} (const std\+::string \&internal\+Path)
+\begin{DoxyCompactList}\small\item\em Handle Internal Path function, checks for any changes to the internal path and redirects the page according to internal\+Path. \end{DoxyCompactList}\item 
+\hyperlink{classAccount}{Account} {\bfseries get\+Account} ()\hypertarget{classWelcomeScreen_a4cd28472ee9233a9f4d32d4804163e79}{}\label{classWelcomeScreen_a4cd28472ee9233a9f4d32d4804163e79}
+
+\item 
+void {\bfseries set\+Account} (\hyperlink{classAccount}{Account} account)\hypertarget{classWelcomeScreen_a087ed7ee3186e47863edb316fba2512d}{}\label{classWelcomeScreen_a087ed7ee3186e47863edb316fba2512d}
+
+\item 
+void {\bfseries connect\+Bridge} ()\hypertarget{classWelcomeScreen_a5b212d7e956e08f9a4cfb6ea509e65cc}{}\label{classWelcomeScreen_a5b212d7e956e08f9a4cfb6ea509e65cc}
+
+\item 
+void {\bfseries handle\+Http\+Response} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)\hypertarget{classWelcomeScreen_a83e9eafc251ce2b4e1e844a218aa3a1a}{}\label{classWelcomeScreen_a83e9eafc251ce2b4e1e844a218aa3a1a}
+
+\item 
+void \hyperlink{classWelcomeScreen_afd5f059dbc60e31015b1f210f6bc16e0}{update\+Profile\+Name} ()
+\begin{DoxyCompactList}\small\item\em Updates name of logged in user on the top menu bar. \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_abe56adce06150723d19ae52713f4b8cc}{login\+Success} ()
+\begin{DoxyCompactList}\small\item\em Validates user account to logged in after successful login. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWelcomeScreen_a720c47b7f03f1423139e9a0f6a1693ba}{login\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Login screen function, updates the page to the login screen. \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_ab61fd209d95cc39b46a9bc0526304264}{create\+Account\+Screen} ()
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classAccount}{Account} function, updates the page to the creation screen. \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_af1587d0a89a8daf995dd851b24daa8b1}{bridge\+Screen} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classBridge}{Bridge} function, updates the page to the bridge control screen. \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_a8c16248993785198885cb22a82113f99}{profile\+Screen} ()
+\begin{DoxyCompactList}\small\item\em profile screen function, updates the page to the profile management screen \end{DoxyCompactList}\item 
+void \hyperlink{classWelcomeScreen_aecd7b015439dfb5bdbe86ed9d8c229fc}{light\+Management\+Screen} (int index)
+\begin{DoxyCompactList}\small\item\em Creates a new \hyperlink{classLightManagementWidget}{Light\+Management\+Widget} for a \hyperlink{classBridge}{Bridge} in in the \hyperlink{classAccount}{Account} bridges vector at index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+W\+Navigation\+Bar $\ast$ {\bfseries nav\+Bar\+\_\+}\hypertarget{classWelcomeScreen_a4667ce16e321647494567feadd35d05c}{}\label{classWelcomeScreen_a4667ce16e321647494567feadd35d05c}
+
+\item 
+Wt\+::\+W\+Menu\+Item $\ast$ {\bfseries login\+Menu\+Item\+\_\+}\hypertarget{classWelcomeScreen_a6866061b373f0f60e644ce3ae0d8783a}{}\label{classWelcomeScreen_a6866061b373f0f60e644ce3ae0d8783a}
+
+\item 
+Wt\+::\+W\+Menu\+Item $\ast$ {\bfseries create\+Menu\+Item\+\_\+}\hypertarget{classWelcomeScreen_aa78bc9664decc36f6eb6e81d9bd6f62d}{}\label{classWelcomeScreen_aa78bc9664decc36f6eb6e81d9bd6f62d}
+
+\item 
+Wt\+::\+W\+Menu\+Item $\ast$ {\bfseries bridges\+Menu\+Item\+\_\+}\hypertarget{classWelcomeScreen_a33f154c6595ce305c06bad498ec993cb}{}\label{classWelcomeScreen_a33f154c6595ce305c06bad498ec993cb}
+
+\item 
+Wt\+::\+W\+Menu\+Item $\ast$ {\bfseries profile\+Menu\+Item\+\_\+}\hypertarget{classWelcomeScreen_a3ebebbe939515f59f78ed2af34523da2}{}\label{classWelcomeScreen_a3ebebbe939515f59f78ed2af34523da2}
+
+\item 
+Wt\+::\+W\+Menu\+Item $\ast$ {\bfseries logout\+Menu\+Item\+\_\+}\hypertarget{classWelcomeScreen_a6737befd56f21e10ea6426eee30c8943}{}\label{classWelcomeScreen_a6737befd56f21e10ea6426eee30c8943}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries server\+Message\+\_\+}\hypertarget{classWelcomeScreen_adf01c5bef52bb8f08dd2f6e973d06761}{}\label{classWelcomeScreen_adf01c5bef52bb8f08dd2f6e973d06761}
+
+\item 
+Wt\+::\+W\+Anchor $\ast$ {\bfseries profile\+Anchor\+\_\+}\hypertarget{classWelcomeScreen_ab307ac80202c76a641fe69c79b75e4c8}{}\label{classWelcomeScreen_ab307ac80202c76a641fe69c79b75e4c8}
+
+\item 
+Wt\+::\+W\+Anchor $\ast$ {\bfseries home\+Anchor\+\_\+}\hypertarget{classWelcomeScreen_a343ab978f9d097e2af07f92f3a09d979}{}\label{classWelcomeScreen_a343ab978f9d097e2af07f92f3a09d979}
+
+\item 
+Wt\+::\+W\+Stacked\+Widget $\ast$ {\bfseries main\+Stack\+\_\+}\hypertarget{classWelcomeScreen_aa6c17ce8f5bfd42984336cb3e2ac3463}{}\label{classWelcomeScreen_aa6c17ce8f5bfd42984336cb3e2ac3463}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries links\+\_\+}\hypertarget{classWelcomeScreen_aea50aeb2ceeaa7046396a48dcbb12271}{}\label{classWelcomeScreen_aea50aeb2ceeaa7046396a48dcbb12271}
+
+\item 
+Wt\+::\+W\+Image $\ast$ {\bfseries ppic\+\_\+}\hypertarget{classWelcomeScreen_a42d5d4b2de8a6dc14b5081555011fc11}{}\label{classWelcomeScreen_a42d5d4b2de8a6dc14b5081555011fc11}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries pic\+Container\+\_\+}\hypertarget{classWelcomeScreen_a1bf928f5f50894fa8baab7c1f89f1be0}{}\label{classWelcomeScreen_a1bf928f5f50894fa8baab7c1f89f1be0}
+
+\item 
+\hyperlink{classCreateAccountWidget}{Create\+Account\+Widget} $\ast$ {\bfseries create\+Screen\+\_\+}\hypertarget{classWelcomeScreen_a6957eca431d149cdc83febea171247fb}{}\label{classWelcomeScreen_a6957eca431d149cdc83febea171247fb}
+
+\item 
+\hyperlink{classLoginWidget}{Login\+Widget} $\ast$ {\bfseries login\+Screen\+\_\+}\hypertarget{classWelcomeScreen_a5be85a6336144771ac59e1ae10ac4711}{}\label{classWelcomeScreen_a5be85a6336144771ac59e1ae10ac4711}
+
+\item 
+\hyperlink{classBridgeScreenWidget}{Bridge\+Screen\+Widget} $\ast$ {\bfseries bridge\+Screen\+\_\+}\hypertarget{classWelcomeScreen_ab83d4d326b0205cf8e56dbe1b53055df}{}\label{classWelcomeScreen_ab83d4d326b0205cf8e56dbe1b53055df}
+
+\item 
+\hyperlink{classProfileWidget}{Profile\+Widget} $\ast$ {\bfseries profile\+Screen\+\_\+}\hypertarget{classWelcomeScreen_a018888199a71b1c16bcf16b1b49f2d73}{}\label{classWelcomeScreen_a018888199a71b1c16bcf16b1b49f2d73}
+
+\item 
+\hyperlink{classLightManagementWidget}{Light\+Management\+Widget} $\ast$ {\bfseries light\+Manage\+\_\+}\hypertarget{classWelcomeScreen_a4bd816f28e599ade3e31c90e9e5e7ea7}{}\label{classWelcomeScreen_a4bd816f28e599ade3e31c90e9e5e7ea7}
+
+\item 
+\hyperlink{classAccount}{Account} {\bfseries account\+\_\+}\hypertarget{classWelcomeScreen_a061965fc25cdc564b17ec23880a56e20}{}\label{classWelcomeScreen_a061965fc25cdc564b17ec23880a56e20}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Welcome\+Screen@{Welcome\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\index{Welcome\+Screen@{Welcome\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{Welcome\+Screen(\+Wt\+::\+W\+Container\+Widget $\ast$parent=0)}{WelcomeScreen(Wt::WContainerWidget *parent=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Welcome\+Screen\+::\+Welcome\+Screen (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classWelcomeScreen_a9d614d7c0a65f5f161fdd62016cccb02}{}\label{classWelcomeScreen_a9d614d7c0a65f5f161fdd62016cccb02}
+
+
+Main Screen constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$parent} & is a pointer the the containerwidget that stores this widget \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Welcome\+Screen@{Welcome\+Screen}!bridge\+Screen@{bridge\+Screen}}
+\index{bridge\+Screen@{bridge\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{bridge\+Screen()}{bridgeScreen()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::bridge\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWelcomeScreen_af1587d0a89a8daf995dd851b24daa8b1}{}\label{classWelcomeScreen_af1587d0a89a8daf995dd851b24daa8b1}
+
+
+\hyperlink{classBridge}{Bridge} function, updates the page to the bridge control screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!create\+Account\+Screen@{create\+Account\+Screen}}
+\index{create\+Account\+Screen@{create\+Account\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{create\+Account\+Screen()}{createAccountScreen()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::create\+Account\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWelcomeScreen_ab61fd209d95cc39b46a9bc0526304264}{}\label{classWelcomeScreen_ab61fd209d95cc39b46a9bc0526304264}
+
+
+Create \hyperlink{classAccount}{Account} function, updates the page to the creation screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!handle\+Internal\+Path@{handle\+Internal\+Path}}
+\index{handle\+Internal\+Path@{handle\+Internal\+Path}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{handle\+Internal\+Path(const std\+::string \&internal\+Path)}{handleInternalPath(const std::string &internalPath)}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::handle\+Internal\+Path (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{internal\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{classWelcomeScreen_a7301f3941c1ff0caa7045329c71c41a7}{}\label{classWelcomeScreen_a7301f3941c1ff0caa7045329c71c41a7}
+
+
+Handle Internal Path function, checks for any changes to the internal path and redirects the page according to internal\+Path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em internal\+Path} & is the page name to be re-\/directed to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!light\+Management\+Screen@{light\+Management\+Screen}}
+\index{light\+Management\+Screen@{light\+Management\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{light\+Management\+Screen(int index)}{lightManagementScreen(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::light\+Management\+Screen (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWelcomeScreen_aecd7b015439dfb5bdbe86ed9d8c229fc}{}\label{classWelcomeScreen_aecd7b015439dfb5bdbe86ed9d8c229fc}
+
+
+Creates a new \hyperlink{classLightManagementWidget}{Light\+Management\+Widget} for a \hyperlink{classBridge}{Bridge} in in the \hyperlink{classAccount}{Account} bridges vector at index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & is the index of \hyperlink{classBridge}{Bridge} in the \hyperlink{classAccount}{Account} bridges vector to view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!login\+Screen@{login\+Screen}}
+\index{login\+Screen@{login\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{login\+Screen()}{loginScreen()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::login\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWelcomeScreen_a720c47b7f03f1423139e9a0f6a1693ba}{}\label{classWelcomeScreen_a720c47b7f03f1423139e9a0f6a1693ba}
+
+
+Login screen function, updates the page to the login screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!login\+Success@{login\+Success}}
+\index{login\+Success@{login\+Success}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{login\+Success()}{loginSuccess()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::login\+Success (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classWelcomeScreen_abe56adce06150723d19ae52713f4b8cc}{}\label{classWelcomeScreen_abe56adce06150723d19ae52713f4b8cc}
+
+
+Validates user account to logged in after successful login. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!profile\+Screen@{profile\+Screen}}
+\index{profile\+Screen@{profile\+Screen}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{profile\+Screen()}{profileScreen()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::profile\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classWelcomeScreen_a8c16248993785198885cb22a82113f99}{}\label{classWelcomeScreen_a8c16248993785198885cb22a82113f99}
+
+
+profile screen function, updates the page to the profile management screen 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Welcome\+Screen@{Welcome\+Screen}!update\+Profile\+Name@{update\+Profile\+Name}}
+\index{update\+Profile\+Name@{update\+Profile\+Name}!Welcome\+Screen@{Welcome\+Screen}}
+\subsubsection[{\texorpdfstring{update\+Profile\+Name()}{updateProfileName()}}]{\setlength{\rightskip}{0pt plus 5cm}void Welcome\+Screen\+::update\+Profile\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classWelcomeScreen_afd5f059dbc60e31015b1f210f6bc16e0}{}\label{classWelcomeScreen_afd5f059dbc60e31015b1f210f6bc16e0}
+
+
+Updates name of logged in user on the top menu bar. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Welcome\+Screen.\+h\item 
+src/\hyperlink{WelcomeScreen_8cpp}{Welcome\+Screen.\+cpp}\end{DoxyCompactItemize}

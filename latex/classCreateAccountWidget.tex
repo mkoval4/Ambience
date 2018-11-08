@@ -1,0 +1,190 @@
+\hypertarget{classCreateAccountWidget}{}\section{Create\+Account\+Widget Class Reference}
+\label{classCreateAccountWidget}\index{Create\+Account\+Widget@{Create\+Account\+Widget}}
+Inheritance diagram for Create\+Account\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCreateAccountWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCreateAccountWidget_afe9017adc69291027c3ebd3f9d448a4c}{Create\+Account\+Widget} (Wt\+::\+W\+Container\+Widget $\ast$parent=0, \hyperlink{classAccount}{Account} $\ast$account=0, \hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$main=0)
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classAccount}{Account} Widget constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classCreateAccountWidget_a7561efaf407aa50a1dc8fe1c8c099d85}{update} ()
+\begin{DoxyCompactList}\small\item\em Update function, clears the widget and re-\/populates with elements of the account creation screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCreateAccountWidget_a07718d46b3c72f481d550d6dfd4290c1}{write\+User\+Info} (std\+::string username, std\+::string password, std\+::string first, std\+::string last)
+\begin{DoxyCompactList}\small\item\em write\+Credentials() function, writes an encrypted version of the user\textquotesingle{}s password into username.\+txt \end{DoxyCompactList}\item 
+void \hyperlink{classCreateAccountWidget_ae55d754c8605628ff22ae06b6aa6e137}{submit} ()\hypertarget{classCreateAccountWidget_ae55d754c8605628ff22ae06b6aa6e137}{}\label{classCreateAccountWidget_ae55d754c8605628ff22ae06b6aa6e137}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCreateAccountWidget_ae55d754c8605628ff22ae06b6aa6e137}{submit()} function, triggered when user presses create account button, displays any applicable warning messages and/or triggers the account credentials write-\/to-\/file. Finally, it redirects to the login screen. \end{DoxyCompactList}\item 
+bool \hyperlink{classCreateAccountWidget_a96b0c9778519832be6406410f0bc3c46}{validate\+Password} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCreateAccountWidget_a96b0c9778519832be6406410f0bc3c46}{validate\+Password()} function, confirms the the user\textquotesingle{}s inputted password == inputted confirmed password \end{DoxyCompactList}\item 
+bool \hyperlink{classCreateAccountWidget_aa64703ec022e1d643011d1831c5aeae6}{validate\+Input\+Fields} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classCreateAccountWidget_aa64703ec022e1d643011d1831c5aeae6}{validate\+Input\+Fields()}\+: ensures that username is valid email address and pass is between 6-\/20 chars \end{DoxyCompactList}\item 
+bool \hyperlink{classCreateAccountWidget_a485aa50d34319d8eb149d9900f40349f}{check\+New\+Userid} (std\+::string userid)
+\begin{DoxyCompactList}\small\item\em check\+New\+User\+Id() function, checks to see if the user\textquotesingle{}s inputted id already exists in the system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries username\+\_\+}\hypertarget{classCreateAccountWidget_a6845ece9134008bcd3c32bad833cbc96}{}\label{classCreateAccountWidget_a6845ece9134008bcd3c32bad833cbc96}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries first\+Name\+\_\+}\hypertarget{classCreateAccountWidget_aa4f562845143675adef1764f57e7e3bf}{}\label{classCreateAccountWidget_aa4f562845143675adef1764f57e7e3bf}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries last\+Name\+\_\+}\hypertarget{classCreateAccountWidget_a12fc04957268ff3dcaee4333e96d04fa}{}\label{classCreateAccountWidget_a12fc04957268ff3dcaee4333e96d04fa}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries password\+\_\+}\hypertarget{classCreateAccountWidget_ac3e4d8093f9bfc2ed5f16b7ffa44aeda}{}\label{classCreateAccountWidget_ac3e4d8093f9bfc2ed5f16b7ffa44aeda}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries confirm\+Password\+\_\+}\hypertarget{classCreateAccountWidget_a5af429ae5ba69d0c7b1e1bdb0f7a313e}{}\label{classCreateAccountWidget_a5af429ae5ba69d0c7b1e1bdb0f7a313e}
+
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries create\+Account\+Button\+\_\+}\hypertarget{classCreateAccountWidget_a53c12cfed364c82a77ecedd133ccb15e}{}\label{classCreateAccountWidget_a53c12cfed364c82a77ecedd133ccb15e}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries unsuccessful\+Password\+\_\+}\hypertarget{classCreateAccountWidget_a34cb095702c7060ce35d6e6c5f42bf13}{}\label{classCreateAccountWidget_a34cb095702c7060ce35d6e6c5f42bf13}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries unsuccessful\+Input\+\_\+}\hypertarget{classCreateAccountWidget_a5b0ef52c652f912ccd9fb4f2dd5d5b94}{}\label{classCreateAccountWidget_a5b0ef52c652f912ccd9fb4f2dd5d5b94}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries account\+Exists\+\_\+}\hypertarget{classCreateAccountWidget_af8fd1df4209baed3b6037f08c9eb9e30}{}\label{classCreateAccountWidget_af8fd1df4209baed3b6037f08c9eb9e30}
+
+\item 
+Wt\+::\+W\+Reg\+Exp\+Validator $\ast$ {\bfseries username\+Validator\+\_\+}\hypertarget{classCreateAccountWidget_ab360ccc42663b0e7f00e728d3974893f}{}\label{classCreateAccountWidget_ab360ccc42663b0e7f00e728d3974893f}
+
+\item 
+Wt\+::\+W\+Length\+Validator $\ast$ {\bfseries password\+Length\+Validator\+\_\+}\hypertarget{classCreateAccountWidget_ae4974f817e22c7fd860f7a9f2d491235}{}\label{classCreateAccountWidget_ae4974f817e22c7fd860f7a9f2d491235}
+
+\item 
+Wt\+::\+W\+Validator $\ast$ {\bfseries input\+Not\+Empty\+\_\+}\hypertarget{classCreateAccountWidget_a2cb26f1cf86707efc2bcb405ff269482}{}\label{classCreateAccountWidget_a2cb26f1cf86707efc2bcb405ff269482}
+
+\item 
+\hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$ {\bfseries parent\+\_\+}\hypertarget{classCreateAccountWidget_a420679af87a13ab8957424ef3a2c39d0}{}\label{classCreateAccountWidget_a420679af87a13ab8957424ef3a2c39d0}
+
+\item 
+\hyperlink{classAccount}{Account} $\ast$ {\bfseries account\+\_\+}\hypertarget{classCreateAccountWidget_a750c33b1af3f426a0be17dd5b6e89cbf}{}\label{classCreateAccountWidget_a750c33b1af3f426a0be17dd5b6e89cbf}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{Create\+Account\+Widget(\+Wt\+::\+W\+Container\+Widget $\ast$parent=0, Account $\ast$account=0, Welcome\+Screen $\ast$main=0)}{CreateAccountWidget(Wt::WContainerWidget *parent=0, Account *account=0, WelcomeScreen *main=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Create\+Account\+Widget\+::\+Create\+Account\+Widget (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{{\bf Account} $\ast$}]{account = {\ttfamily 0}, }
+\item[{{\bf Welcome\+Screen} $\ast$}]{main = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classCreateAccountWidget_afe9017adc69291027c3ebd3f9d448a4c}{}\label{classCreateAccountWidget_afe9017adc69291027c3ebd3f9d448a4c}
+
+
+Create \hyperlink{classAccount}{Account} Widget constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$parent} & is a pointer the the containerwidget that stores this widget \\
+\hline
+{\em $\ast$account} & is a pointer to the user account object \\
+\hline
+{\em $\ast$main} & is a pointer to the app\textquotesingle{}s welcome screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!check\+New\+Userid@{check\+New\+Userid}}
+\index{check\+New\+Userid@{check\+New\+Userid}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{check\+New\+Userid(std\+::string userid)}{checkNewUserid(std::string userid)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Create\+Account\+Widget\+::check\+New\+Userid (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{userid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCreateAccountWidget_a485aa50d34319d8eb149d9900f40349f}{}\label{classCreateAccountWidget_a485aa50d34319d8eb149d9900f40349f}
+
+
+check\+New\+User\+Id() function, checks to see if the user\textquotesingle{}s inputted id already exists in the system 
+
+
+\begin{DoxyParams}{Parameters}
+{\em userid} & is a string representing the user\textquotesingle{}s inputted username \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\+: true if the username is \char`\"{}new\char`\"{} false if already exists 
+\end{DoxyReturn}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!update@{update}}
+\index{update@{update}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Create\+Account\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCreateAccountWidget_a7561efaf407aa50a1dc8fe1c8c099d85}{}\label{classCreateAccountWidget_a7561efaf407aa50a1dc8fe1c8c099d85}
+
+
+Update function, clears the widget and re-\/populates with elements of the account creation screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!validate\+Input\+Fields@{validate\+Input\+Fields}}
+\index{validate\+Input\+Fields@{validate\+Input\+Fields}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{validate\+Input\+Fields()}{validateInputFields()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Create\+Account\+Widget\+::validate\+Input\+Fields (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCreateAccountWidget_aa64703ec022e1d643011d1831c5aeae6}{}\label{classCreateAccountWidget_aa64703ec022e1d643011d1831c5aeae6}
+
+
+\hyperlink{classCreateAccountWidget_aa64703ec022e1d643011d1831c5aeae6}{validate\+Input\+Fields()}\+: ensures that username is valid email address and pass is between 6-\/20 chars 
+
+\begin{DoxyReturn}{Returns}
+bool true if the input fields are valid, false otherwise 
+\end{DoxyReturn}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!validate\+Password@{validate\+Password}}
+\index{validate\+Password@{validate\+Password}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{validate\+Password()}{validatePassword()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Create\+Account\+Widget\+::validate\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCreateAccountWidget_a96b0c9778519832be6406410f0bc3c46}{}\label{classCreateAccountWidget_a96b0c9778519832be6406410f0bc3c46}
+
+
+\hyperlink{classCreateAccountWidget_a96b0c9778519832be6406410f0bc3c46}{validate\+Password()} function, confirms the the user\textquotesingle{}s inputted password == inputted confirmed password 
+
+\begin{DoxyReturn}{Returns}
+bool representing if the passwords are the same or not 
+\end{DoxyReturn}
+\index{Create\+Account\+Widget@{Create\+Account\+Widget}!write\+User\+Info@{write\+User\+Info}}
+\index{write\+User\+Info@{write\+User\+Info}!Create\+Account\+Widget@{Create\+Account\+Widget}}
+\subsubsection[{\texorpdfstring{write\+User\+Info(std\+::string username, std\+::string password, std\+::string first, std\+::string last)}{writeUserInfo(std::string username, std::string password, std::string first, std::string last)}}]{\setlength{\rightskip}{0pt plus 5cm}void Create\+Account\+Widget\+::write\+User\+Info (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{username, }
+\item[{std\+::string}]{password, }
+\item[{std\+::string}]{first, }
+\item[{std\+::string}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCreateAccountWidget_a07718d46b3c72f481d550d6dfd4290c1}{}\label{classCreateAccountWidget_a07718d46b3c72f481d550d6dfd4290c1}
+
+
+write\+Credentials() function, writes an encrypted version of the user\textquotesingle{}s password into username.\+txt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & is a string representing the user\textquotesingle{}s inputted username \\
+\hline
+{\em password} & is a string representing the user\textquotesingle{}s inputted password \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Create\+Account\+Widget.\+h\item 
+src/\hyperlink{CreateAccountWidget_8cpp}{Create\+Account\+Widget.\+cpp}\end{DoxyCompactItemize}

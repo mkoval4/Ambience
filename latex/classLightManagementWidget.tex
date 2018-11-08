@@ -1,0 +1,903 @@
+\hypertarget{classLightManagementWidget}{}\section{Light\+Management\+Widget Class Reference}
+\label{classLightManagementWidget}\index{Light\+Management\+Widget@{Light\+Management\+Widget}}
+Inheritance diagram for Light\+Management\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLightManagementWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLightManagementWidget_a322acb2556f7ce22b997d32cbc23344b}{Light\+Management\+Widget} (Wt\+::\+W\+Container\+Widget $\ast$parent=0, \hyperlink{classBridge}{Bridge} $\ast$bridge=0, \hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$main=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLight}{Light} Management Widget constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_adc85e9100ac03e670cf0a9dc5d271058}{update} ()
+\begin{DoxyCompactList}\small\item\em Update function, clears the widget and re-\/populates with elements of the light management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLightManagementWidget_ae2c05678777e26cc117dc9e3b1e6d482}{view\+Overview\+Widget} ()
+\begin{DoxyCompactList}\small\item\em View overview function, sets the current widget to the overview widget when clicked on the menu. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_acd9a32efacbccb61424056839748c283}{view\+Lights\+Widget} ()
+\begin{DoxyCompactList}\small\item\em View lights function, sets the current widget to the light widget when clicked on the menu. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a0ba71461f9463f07373bafff62ce017e}{view\+Groups\+Widget} ()
+\begin{DoxyCompactList}\small\item\em View groups function, sets the current widget shown to groups widget when clicked on the menu. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a62809bb5bcf8a5a87ed248d9c5880a6c}{view\+Schedules\+Widget} ()
+\begin{DoxyCompactList}\small\item\em View schedule function, sets the current widget shown to schedule widget when clicked on the menu. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a7b49494c162f4e9703469d6519e0dc0a}{edit\+R\+G\+B\+Dialog} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Opens a W\+Dialog box to edit rgb values for the specified light. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a36006718c829f0bbd6c2063dded822bc}{edit\+Hue\+Sat\+Dialog} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Opens a W\+Dialog box to convert hue, saturation, and brightness to rgb color. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a80e917263bea4c99ca9182fb57ce0993}{update\+Lights\+Table} ()
+\begin{DoxyCompactList}\small\item\em Update lights table function, clears the current table and re-\/populates it with all the lights that are in the bridge. The user can edit the properties of lights from this table. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_ae6de54d491c808a6a85ab9b01be3382b}{edit\+Light\+Dialog} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Edit lights function, when the edit button is clicked, a window where the user can change any property of the selected light appears. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_afc4ccdbe0e7fe288e3a76284c304be6f}{remove\+Light} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Remove lights function, removes the selected light from the current bridge. Does not work on Hue Emulator but will work with real bridges. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a9455da3d378d78c2840eafa04ea37294}{update\+Light\+Info} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Update lights function, creates a J\+S\+ON request to change properties of a given light based on user\textquotesingle{}s inputs in the edit light dialog box. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a147fb03b68b3caf8744d10c78b26caff}{update\+Light\+Bri} (W\+Slider $\ast$slider\+\_\+, \hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Update brightness function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s brightness value given the brightness slider\textquotesingle{}s value. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_abbb93168a42c74301715f6da39ce0040}{update\+Light\+On} (W\+Push\+Button $\ast$button\+\_\+, \hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Update on/off function, creates a J\+S\+ON request to toggle the selected light\textquotesingle{}s on/off value. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a559f5c7680b14415216e00919c01dd3c}{update\+Light\+XY} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Update light\textquotesingle{}s XY function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s color value given the XY values. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a25f87c6906d4f665f17006189161f8ad}{update\+Light\+HS} (\hyperlink{classLight}{Light} $\ast$light)
+\begin{DoxyCompactList}\small\item\em Update HS function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s hue, saturation, brightness, and transition time values. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_aaf5913f9aa16aaf3d70c929f606851c1}{update\+Groups\+Table} ()
+\begin{DoxyCompactList}\small\item\em Update groups table function, clears the current table and re-\/populates it with all the groups that are in the bridge. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_afd405081a296906e278bfbea3f200a97}{create\+Group\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Create groups function, when the create button is clicked, a dialog appears where the user can create a group and select lights to be added to the group. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a76c89408eda6d7a22fff2cd308112912}{group\+Advanced\+Dialog} (\hyperlink{classGroup}{Group} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Update groups advanced function, creates a opens a dialog box to change any property of a given group based on user\textquotesingle{}s inputs in the dialog box. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a78e5bc6b0f7f5fbe2fe4bf26f61667a7}{edit\+Group\+Dialog} (\hyperlink{classGroup}{Group} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Edit group function, when the edit button is clicked, a window where the user can change lights assigned to the selected group appears. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a0471c906b78aadede7142dc0cfa163aa}{create\+Group} ()
+\begin{DoxyCompactList}\small\item\em Create group function, creates a J\+S\+ON request to add a new group to the bridge, using the user defined options selected in create group dialog. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_aa05013c523ad75a8e5cf76f1698ce33e}{remove\+Group} (\hyperlink{classGroup}{Group} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Remove group function, creates a J\+S\+ON request to remove the selected group from the current bridge. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_aa121e339ea3b4b7df1d2c60fffc01cd2}{update\+Group\+Info} (\hyperlink{classGroup}{Group} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Update groups function, creates a J\+S\+ON request to change properties of a given group based on user\textquotesingle{}s inputs in the edit group dialog box. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a4515cfa200080a28655aa73f43641cf5}{group\+Update\+Advanced} (\hyperlink{classGroup}{Group} $\ast$group)
+\begin{DoxyCompactList}\small\item\em Update groups function, creates a J\+S\+ON request to change properties of a given group based on user\textquotesingle{}s inputs in the advanced group dialog box. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a8269fdb02b41728a474d07830743b61f}{update\+Schedules\+Table} ()
+\begin{DoxyCompactList}\small\item\em Update schedules table function, clears the current table and re-\/populates it with all the schedules that are in the bridge. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a387f9ca2f98907351c63ebac6d1e70fe}{create\+Schedule\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Create schedule function, when the create button is clicked, a dialog appears where the user can create a schedule and select their options. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a016342be1f2ecb2f805405d1e68399e7}{create\+Schedule} ()
+\begin{DoxyCompactList}\small\item\em Create schedule function, creates a J\+S\+ON request to add a new schedule to the bridge, using the user defined options selected in create schedule dialog. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_aaa66e284cf4bbc7c1127ae9d325e41a2}{edit\+Schedule\+Dialog} (\hyperlink{classSchedule}{Schedule} $\ast$schedule)
+\begin{DoxyCompactList}\small\item\em Edit schedule function, when the edit button is clicked, a window where the user can change properties for the selected schedule appears. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_ac6a0c7163e0e383c55d72490d1ded36b}{update\+Schedule\+Info} (\hyperlink{classSchedule}{Schedule} $\ast$schedule)
+\begin{DoxyCompactList}\small\item\em Update schedule function, creates a J\+S\+ON request to change properties of a given schedule based on user\textquotesingle{}s inputs in the edit schedule dialog box. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_af654e9b80fa36c3bde02464907d2745e}{remove\+Schedule} (\hyperlink{classSchedule}{Schedule} $\ast$schedule)
+\begin{DoxyCompactList}\small\item\em Remove schedule function, creates a J\+S\+ON request to remove the selected schedule from the current bridge. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a0cddaa88f0ec438a61a421d059935048}{delete\+Request} (string url)
+\begin{DoxyCompactList}\small\item\em Function that creates a new H\+T\+TP Client and generates a Client D\+E\+L\+E\+TE request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the D\+E\+L\+E\+TE call to handle the response. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a13603b45a36df6fc5ffab68bc1791f6f}{put\+Request} (string url, string json)
+\begin{DoxyCompactList}\small\item\em Function that creates a new H\+T\+TP Client and generates a Client P\+UT request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the P\+UT call to handle the response. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a2d83bd768b2afc25eaade1ca8d64d878}{post\+Request} (string url, string json)
+\begin{DoxyCompactList}\small\item\em Function that creates a new H\+T\+TP Client and generates a Client P\+O\+ST request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the P\+O\+ST call to handle the response. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Function to handle the Http response generated by the Wt Http Client object. This function handles the done() signal sent when doing Client\textquotesingle{}s put, post, and delete\+Request functions even though it is named handle\+Put\+Http. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_a6d10a493cf2189f9a949c12828b499c2}{refresh\+Bridge} ()
+\begin{DoxyCompactList}\small\item\em Function that creates a new H\+T\+TP Client and generates a Client G\+ET request to access the Hue A\+PI for the current \hyperlink{classBridge}{Bridge}. Calls \hyperlink{classLightManagementWidget_aef0c2a180f37b97769e39a52a9fce257}{refresh\+Bridge\+Http()} function once client is done the G\+ET call to handle the response. \end{DoxyCompactList}\item 
+void \hyperlink{classLightManagementWidget_aef0c2a180f37b97769e39a52a9fce257}{refresh\+Bridge\+Http} (boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)
+\begin{DoxyCompactList}\small\item\em Function to handle the Http response generated by the Wt Http Client object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$ {\bfseries parent\+\_\+}\hypertarget{classLightManagementWidget_a6c29ac9c7547417b442219b962ca2195}{}\label{classLightManagementWidget_a6c29ac9c7547417b442219b962ca2195}
+
+\item 
+\hyperlink{classBridge}{Bridge} $\ast$ {\bfseries bridge\+\_\+}\hypertarget{classLightManagementWidget_af55628a2bfe170e6eb56a5630fdd947d}{}\label{classLightManagementWidget_af55628a2bfe170e6eb56a5630fdd947d}
+
+\item 
+Wt\+::\+W\+Stacked\+Widget $\ast$ {\bfseries light\+Management\+Stack\+\_\+}\hypertarget{classLightManagementWidget_ae46ca954b273cee2c4ad33bf31137f52}{}\label{classLightManagementWidget_ae46ca954b273cee2c4ad33bf31137f52}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries overview\+Widget\+\_\+}\hypertarget{classLightManagementWidget_a1b1170bf380fc56c67870ecdb0129c27}{}\label{classLightManagementWidget_a1b1170bf380fc56c67870ecdb0129c27}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries lights\+Widget\+\_\+}\hypertarget{classLightManagementWidget_a75b0f44814bba96f4c6c4e2168e2461b}{}\label{classLightManagementWidget_a75b0f44814bba96f4c6c4e2168e2461b}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries groups\+Widget\+\_\+}\hypertarget{classLightManagementWidget_a141e40120063933b98c6dd73a0672d56}{}\label{classLightManagementWidget_a141e40120063933b98c6dd73a0672d56}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries schedules\+Widget\+\_\+}\hypertarget{classLightManagementWidget_abf56d950683122a6f3fda911c4722dfe}{}\label{classLightManagementWidget_abf56d950683122a6f3fda911c4722dfe}
+
+\item 
+Wt\+::\+W\+Table $\ast$ {\bfseries lights\+Table\+\_\+}\hypertarget{classLightManagementWidget_a0abd3deb6e9263dc8ed1b3c77c88eb01}{}\label{classLightManagementWidget_a0abd3deb6e9263dc8ed1b3c77c88eb01}
+
+\item 
+Wt\+::\+W\+Table $\ast$ {\bfseries groups\+Table\+\_\+}\hypertarget{classLightManagementWidget_aa9b7fa9e000e5593b729bece3a5060d0}{}\label{classLightManagementWidget_aa9b7fa9e000e5593b729bece3a5060d0}
+
+\item 
+Wt\+::\+W\+Table $\ast$ {\bfseries schedules\+Table\+\_\+}\hypertarget{classLightManagementWidget_a765cd5781b6e245dbf884ce10b67f188}{}\label{classLightManagementWidget_a765cd5781b6e245dbf884ce10b67f188}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries rgb\+Container\+\_\+}\hypertarget{classLightManagementWidget_a711e78c0659a5a8220605d7352510612}{}\label{classLightManagementWidget_a711e78c0659a5a8220605d7352510612}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries brightness\+Slider\+\_\+}\hypertarget{classLightManagementWidget_aa9b9dffea1c57e92e6c76d5504cd258e}{}\label{classLightManagementWidget_aa9b9dffea1c57e92e6c76d5504cd258e}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries edit\+R\+G\+B\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_a4906e9eadc8fa1dc7b9369d36e2a3842}{}\label{classLightManagementWidget_a4906e9eadc8fa1dc7b9369d36e2a3842}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries red\+Slider}\hypertarget{classLightManagementWidget_a172179e9792e715c46aee1cef8008712}{}\label{classLightManagementWidget_a172179e9792e715c46aee1cef8008712}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries green\+Slider}\hypertarget{classLightManagementWidget_adb06ad0e7fb340d917cc00514932d488}{}\label{classLightManagementWidget_adb06ad0e7fb340d917cc00514932d488}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries blue\+Slider}\hypertarget{classLightManagementWidget_a42b38e8361fb5efd81e9186009d401d8}{}\label{classLightManagementWidget_a42b38e8361fb5efd81e9186009d401d8}
+
+\item 
+Wt\+::\+W\+Container\+Widget $\ast$ {\bfseries hue\+Sat\+Container\+\_\+}\hypertarget{classLightManagementWidget_a22024c8ee2d5f3124f29f2e15fb3bbc0}{}\label{classLightManagementWidget_a22024c8ee2d5f3124f29f2e15fb3bbc0}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries edit\+Hue\+Sat\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_af901a64435e0440d0f59b824b0b6dacb}{}\label{classLightManagementWidget_af901a64435e0440d0f59b824b0b6dacb}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries hue\+Slider}\hypertarget{classLightManagementWidget_a3be0dfb061ca6694babd317a653a834d}{}\label{classLightManagementWidget_a3be0dfb061ca6694babd317a653a834d}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries sat\+Slider}\hypertarget{classLightManagementWidget_a5103125086f2e29dc3401f069338fba7}{}\label{classLightManagementWidget_a5103125086f2e29dc3401f069338fba7}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries bri\+Slider}\hypertarget{classLightManagementWidget_a6c3438767954e3a44ae771a49c62cf6d}{}\label{classLightManagementWidget_a6c3438767954e3a44ae771a49c62cf6d}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries edit\+Light\+Transition}\hypertarget{classLightManagementWidget_a47d15db8db2b67e467dab491b1d0265f}{}\label{classLightManagementWidget_a47d15db8db2b67e467dab491b1d0265f}
+
+\item 
+Wt\+::\+W\+Int\+Validator $\ast$ {\bfseries int\+Validator}\hypertarget{classLightManagementWidget_ac7abebc7258c8c2aa766be0b3204ef65}{}\label{classLightManagementWidget_ac7abebc7258c8c2aa766be0b3204ef65}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries edit\+Light\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_a0563d72b52abb642fab4d986f0e23c10}{}\label{classLightManagementWidget_a0563d72b52abb642fab4d986f0e23c10}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries edit\+Light\+Name}\hypertarget{classLightManagementWidget_a70c73c332969658554a49888b2344935}{}\label{classLightManagementWidget_a70c73c332969658554a49888b2344935}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries create\+Group\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_aba520c3c25b95df6315d48bb5b51453e}{}\label{classLightManagementWidget_aba520c3c25b95df6315d48bb5b51453e}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries group\+Name}\hypertarget{classLightManagementWidget_a9744405ffdd05c9b30d6b83d4f1b244e}{}\label{classLightManagementWidget_a9744405ffdd05c9b30d6b83d4f1b244e}
+
+\item 
+vector$<$ W\+Check\+Box $\ast$ $>$ {\bfseries light\+Boxes}\hypertarget{classLightManagementWidget_a6d6106707c59d849fa0611038e0167d7}{}\label{classLightManagementWidget_a6d6106707c59d849fa0611038e0167d7}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries edit\+Group\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_afdd383828277fe7c74fc10ed7e6128b6}{}\label{classLightManagementWidget_afdd383828277fe7c74fc10ed7e6128b6}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries edit\+Group\+Name}\hypertarget{classLightManagementWidget_a79a564dbf36f3c2d30df3278d7d735b8}{}\label{classLightManagementWidget_a79a564dbf36f3c2d30df3278d7d735b8}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries group\+Advanced\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_a81640788de8689669bbe83b4ec071168}{}\label{classLightManagementWidget_a81640788de8689669bbe83b4ec071168}
+
+\item 
+Wt\+::\+W\+Slider $\ast$ {\bfseries brightness\+Group}\hypertarget{classLightManagementWidget_a6cb05902dd93f6a3febf3e421ff705fb}{}\label{classLightManagementWidget_a6cb05902dd93f6a3febf3e421ff705fb}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries hue}\hypertarget{classLightManagementWidget_acb714cf811dc41ba76c7bd495b984fc0}{}\label{classLightManagementWidget_acb714cf811dc41ba76c7bd495b984fc0}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries saturation}\hypertarget{classLightManagementWidget_a8d0083dc37a812d1b0eff09be259011b}{}\label{classLightManagementWidget_a8d0083dc37a812d1b0eff09be259011b}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries ct}\hypertarget{classLightManagementWidget_a6a16fc3f7b9329043748049c793415d3}{}\label{classLightManagementWidget_a6a16fc3f7b9329043748049c793415d3}
+
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ {\bfseries alert}\hypertarget{classLightManagementWidget_aef538a35ec1ff1eda77521cfe676993e}{}\label{classLightManagementWidget_aef538a35ec1ff1eda77521cfe676993e}
+
+\item 
+Wt\+::\+W\+Combo\+Box $\ast$ {\bfseries effect}\hypertarget{classLightManagementWidget_a56b2612aca4fc546260aa035f1978b04}{}\label{classLightManagementWidget_a56b2612aca4fc546260aa035f1978b04}
+
+\item 
+W\+Combo\+Box $\ast$ {\bfseries reachable}\hypertarget{classLightManagementWidget_aeef6a9c220745a7aa9c46788effd386d}{}\label{classLightManagementWidget_aeef6a9c220745a7aa9c46788effd386d}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries create\+Schedule\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_ad1510a03d0e4db44b52826251f0fe986}{}\label{classLightManagementWidget_ad1510a03d0e4db44b52826251f0fe986}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries schedule\+Name}\hypertarget{classLightManagementWidget_aa16ef200e92a2de85f428691b9090ed8}{}\label{classLightManagementWidget_aa16ef200e92a2de85f428691b9090ed8}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries description}\hypertarget{classLightManagementWidget_ad43a0fb4aa96dffe001f3b6f4b43195d}{}\label{classLightManagementWidget_ad43a0fb4aa96dffe001f3b6f4b43195d}
+
+\item 
+Wt\+::\+W\+Date\+Edit $\ast$ {\bfseries date\+Edit}\hypertarget{classLightManagementWidget_aecb35c19775f79d3d121cef537939ab0}{}\label{classLightManagementWidget_aecb35c19775f79d3d121cef537939ab0}
+
+\item 
+Wt\+::\+W\+Time\+Edit $\ast$ {\bfseries time\+Edit}\hypertarget{classLightManagementWidget_a9c8cbffe6b832365928a20aba96673ff}{}\label{classLightManagementWidget_a9c8cbffe6b832365928a20aba96673ff}
+
+\item 
+Wt\+::\+W\+Button\+Group $\ast$ {\bfseries resource\+Button\+Group}\hypertarget{classLightManagementWidget_a220fb38a472e53d77530fc2e3a5be5c4}{}\label{classLightManagementWidget_a220fb38a472e53d77530fc2e3a5be5c4}
+
+\item 
+W\+Line\+Edit $\ast$ {\bfseries resource\+Num}\hypertarget{classLightManagementWidget_ad972179df7def919c315d3ef7edf36d0}{}\label{classLightManagementWidget_ad972179df7def919c315d3ef7edf36d0}
+
+\item 
+Wt\+::\+W\+Button\+Group $\ast$ {\bfseries action\+Button\+Group}\hypertarget{classLightManagementWidget_ab236b088b3ff8e95e33759fa808b1cbe}{}\label{classLightManagementWidget_ab236b088b3ff8e95e33759fa808b1cbe}
+
+\item 
+Wt\+::\+W\+Button\+Group $\ast$ {\bfseries on\+Button\+Group}\hypertarget{classLightManagementWidget_aaee5db1e504e174c479e5cdc0c05f1d8}{}\label{classLightManagementWidget_aaee5db1e504e174c479e5cdc0c05f1d8}
+
+\item 
+W\+Slider $\ast$ {\bfseries brightness\+Schedule}\hypertarget{classLightManagementWidget_a43d80104e5a6ebc95306b4f7cc3d0cff}{}\label{classLightManagementWidget_a43d80104e5a6ebc95306b4f7cc3d0cff}
+
+\item 
+W\+Line\+Edit $\ast$ {\bfseries transition\+Schedule}\hypertarget{classLightManagementWidget_a866c4bd22470913d82b03a344f9ec85a}{}\label{classLightManagementWidget_a866c4bd22470913d82b03a344f9ec85a}
+
+\item 
+Wt\+::\+W\+Dialog $\ast$ {\bfseries edit\+Schedule\+Dialog\+\_\+}\hypertarget{classLightManagementWidget_a7fbc9ed222c8f28e682096bdfa93ceee}{}\label{classLightManagementWidget_a7fbc9ed222c8f28e682096bdfa93ceee}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries edit\+Schedule\+Description}\hypertarget{classLightManagementWidget_a2c5a53051c346b1d611f7ac267789968}{}\label{classLightManagementWidget_a2c5a53051c346b1d611f7ac267789968}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries edit\+Schedule\+Name}\hypertarget{classLightManagementWidget_ab9575daea224ed3c340387d447606360}{}\label{classLightManagementWidget_ab9575daea224ed3c340387d447606360}
+
+\item 
+Wt\+::\+W\+Date\+Edit $\ast$ {\bfseries edit\+Date\+Edit}\hypertarget{classLightManagementWidget_a299b7f356c693f7ea7dcbd6f417c0158}{}\label{classLightManagementWidget_a299b7f356c693f7ea7dcbd6f417c0158}
+
+\item 
+Wt\+::\+W\+Time\+Edit $\ast$ {\bfseries edit\+Time\+Edit}\hypertarget{classLightManagementWidget_a24a9a2f46f3984db535686c5a5b54035}{}\label{classLightManagementWidget_a24a9a2f46f3984db535686c5a5b54035}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{Light\+Management\+Widget(\+Wt\+::\+W\+Container\+Widget $\ast$parent=0, Bridge $\ast$bridge=0, Welcome\+Screen $\ast$main=0)}{LightManagementWidget(Wt::WContainerWidget *parent=0, Bridge *bridge=0, WelcomeScreen *main=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Light\+Management\+Widget\+::\+Light\+Management\+Widget (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{{\bf Bridge} $\ast$}]{bridge = {\ttfamily 0}, }
+\item[{{\bf Welcome\+Screen} $\ast$}]{main = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classLightManagementWidget_a322acb2556f7ce22b997d32cbc23344b}{}\label{classLightManagementWidget_a322acb2556f7ce22b997d32cbc23344b}
+
+
+\hyperlink{classLight}{Light} Management Widget constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$parent} & is a pointer the the containerwidget that stores this widget \\
+\hline
+{\em $\ast$bridge} & is a pointer to the \hyperlink{classBridge}{Bridge} object \\
+\hline
+{\em $\ast$main} & is a pointer to the app\textquotesingle{}s welcome screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!create\+Group@{create\+Group}}
+\index{create\+Group@{create\+Group}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Group()}{createGroup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::create\+Group (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a0471c906b78aadede7142dc0cfa163aa}{}\label{classLightManagementWidget_a0471c906b78aadede7142dc0cfa163aa}
+
+
+Create group function, creates a J\+S\+ON request to add a new group to the bridge, using the user defined options selected in create group dialog. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!create\+Group\+Dialog@{create\+Group\+Dialog}}
+\index{create\+Group\+Dialog@{create\+Group\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Group\+Dialog()}{createGroupDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::create\+Group\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_afd405081a296906e278bfbea3f200a97}{}\label{classLightManagementWidget_afd405081a296906e278bfbea3f200a97}
+
+
+Create groups function, when the create button is clicked, a dialog appears where the user can create a group and select lights to be added to the group. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!create\+Schedule@{create\+Schedule}}
+\index{create\+Schedule@{create\+Schedule}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Schedule()}{createSchedule()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::create\+Schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a016342be1f2ecb2f805405d1e68399e7}{}\label{classLightManagementWidget_a016342be1f2ecb2f805405d1e68399e7}
+
+
+Create schedule function, creates a J\+S\+ON request to add a new schedule to the bridge, using the user defined options selected in create schedule dialog. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!create\+Schedule\+Dialog@{create\+Schedule\+Dialog}}
+\index{create\+Schedule\+Dialog@{create\+Schedule\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{create\+Schedule\+Dialog()}{createScheduleDialog()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::create\+Schedule\+Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a387f9ca2f98907351c63ebac6d1e70fe}{}\label{classLightManagementWidget_a387f9ca2f98907351c63ebac6d1e70fe}
+
+
+Create schedule function, when the create button is clicked, a dialog appears where the user can create a schedule and select their options. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!delete\+Request@{delete\+Request}}
+\index{delete\+Request@{delete\+Request}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{delete\+Request(string url)}{deleteRequest(string url)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::delete\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a0cddaa88f0ec438a61a421d059935048}{}\label{classLightManagementWidget_a0cddaa88f0ec438a61a421d059935048}
+
+
+Function that creates a new H\+T\+TP Client and generates a Client D\+E\+L\+E\+TE request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the D\+E\+L\+E\+TE call to handle the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url of the resource to D\+E\+L\+E\+TE\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!edit\+Group\+Dialog@{edit\+Group\+Dialog}}
+\index{edit\+Group\+Dialog@{edit\+Group\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{edit\+Group\+Dialog(\+Group $\ast$group)}{editGroupDialog(Group *group)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::edit\+Group\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Group} $\ast$}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a78e5bc6b0f7f5fbe2fe4bf26f61667a7}{}\label{classLightManagementWidget_a78e5bc6b0f7f5fbe2fe4bf26f61667a7}
+
+
+Edit group function, when the edit button is clicked, a window where the user can change lights assigned to the selected group appears. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & is the group object that was selected to edit from the table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!edit\+Hue\+Sat\+Dialog@{edit\+Hue\+Sat\+Dialog}}
+\index{edit\+Hue\+Sat\+Dialog@{edit\+Hue\+Sat\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{edit\+Hue\+Sat\+Dialog(\+Light $\ast$light)}{editHueSatDialog(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::edit\+Hue\+Sat\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a36006718c829f0bbd6c2063dded822bc}{}\label{classLightManagementWidget_a36006718c829f0bbd6c2063dded822bc}
+
+
+Opens a W\+Dialog box to convert hue, saturation, and brightness to rgb color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the current light object to edit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!edit\+Light\+Dialog@{edit\+Light\+Dialog}}
+\index{edit\+Light\+Dialog@{edit\+Light\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{edit\+Light\+Dialog(\+Light $\ast$light)}{editLightDialog(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::edit\+Light\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_ae6de54d491c808a6a85ab9b01be3382b}{}\label{classLightManagementWidget_ae6de54d491c808a6a85ab9b01be3382b}
+
+
+Edit lights function, when the edit button is clicked, a window where the user can change any property of the selected light appears. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object that was selected to edit from the table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!edit\+R\+G\+B\+Dialog@{edit\+R\+G\+B\+Dialog}}
+\index{edit\+R\+G\+B\+Dialog@{edit\+R\+G\+B\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{edit\+R\+G\+B\+Dialog(\+Light $\ast$light)}{editRGBDialog(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::edit\+R\+G\+B\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a7b49494c162f4e9703469d6519e0dc0a}{}\label{classLightManagementWidget_a7b49494c162f4e9703469d6519e0dc0a}
+
+
+Opens a W\+Dialog box to edit rgb values for the specified light. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the current light object to edit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!edit\+Schedule\+Dialog@{edit\+Schedule\+Dialog}}
+\index{edit\+Schedule\+Dialog@{edit\+Schedule\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{edit\+Schedule\+Dialog(\+Schedule $\ast$schedule)}{editScheduleDialog(Schedule *schedule)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::edit\+Schedule\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule} $\ast$}]{schedule}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_aaa66e284cf4bbc7c1127ae9d325e41a2}{}\label{classLightManagementWidget_aaa66e284cf4bbc7c1127ae9d325e41a2}
+
+
+Edit schedule function, when the edit button is clicked, a window where the user can change properties for the selected schedule appears. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schedule} & is the schedule object that was selected to edit from the table.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!group\+Advanced\+Dialog@{group\+Advanced\+Dialog}}
+\index{group\+Advanced\+Dialog@{group\+Advanced\+Dialog}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{group\+Advanced\+Dialog(\+Group $\ast$group)}{groupAdvancedDialog(Group *group)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::group\+Advanced\+Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf Group} $\ast$}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a76c89408eda6d7a22fff2cd308112912}{}\label{classLightManagementWidget_a76c89408eda6d7a22fff2cd308112912}
+
+
+Update groups advanced function, creates a opens a dialog box to change any property of a given group based on user\textquotesingle{}s inputs in the dialog box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & is the group object to update from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!group\+Update\+Advanced@{group\+Update\+Advanced}}
+\index{group\+Update\+Advanced@{group\+Update\+Advanced}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{group\+Update\+Advanced(\+Group $\ast$group)}{groupUpdateAdvanced(Group *group)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::group\+Update\+Advanced (
+\begin{DoxyParamCaption}
+\item[{{\bf Group} $\ast$}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a4515cfa200080a28655aa73f43641cf5}{}\label{classLightManagementWidget_a4515cfa200080a28655aa73f43641cf5}
+
+
+Update groups function, creates a J\+S\+ON request to change properties of a given group based on user\textquotesingle{}s inputs in the advanced group dialog box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object to update from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!handle\+Put\+Http@{handle\+Put\+Http}}
+\index{handle\+Put\+Http@{handle\+Put\+Http}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{handle\+Put\+Http(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{handlePutHttp(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::handle\+Put\+Http (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{}\label{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}
+
+
+Function to handle the Http response generated by the Wt Http Client object. This function handles the done() signal sent when doing Client\textquotesingle{}s put, post, and delete\+Request functions even though it is named handle\+Put\+Http. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$err} & stores the error code generated by an Http request, null if request was successful \\
+\hline
+{\em \&response} & stores the response message generated by the Http request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!post\+Request@{post\+Request}}
+\index{post\+Request@{post\+Request}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{post\+Request(string url, string json)}{postRequest(string url, string json)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::post\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{string}]{json}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a2d83bd768b2afc25eaade1ca8d64d878}{}\label{classLightManagementWidget_a2d83bd768b2afc25eaade1ca8d64d878}
+
+
+Function that creates a new H\+T\+TP Client and generates a Client P\+O\+ST request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the P\+O\+ST call to handle the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url of the resource to P\+O\+ST the json data to \\
+\hline
+{\em json} & the body json data to P\+O\+ST to the Hue A\+PI\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!put\+Request@{put\+Request}}
+\index{put\+Request@{put\+Request}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{put\+Request(string url, string json)}{putRequest(string url, string json)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::put\+Request (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{string}]{json}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a13603b45a36df6fc5ffab68bc1791f6f}{}\label{classLightManagementWidget_a13603b45a36df6fc5ffab68bc1791f6f}
+
+
+Function that creates a new H\+T\+TP Client and generates a Client P\+UT request to access the Hue A\+PI for the current resource specified in U\+RL. Calls \hyperlink{classLightManagementWidget_a09f20b24e34de1ede968a73e7118913e}{handle\+Put\+Http()} function once client is done the P\+UT call to handle the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the url of the resource to P\+UT the json data to \\
+\hline
+{\em json} & the body json data to P\+UT to the Hue A\+PI\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!refresh\+Bridge@{refresh\+Bridge}}
+\index{refresh\+Bridge@{refresh\+Bridge}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{refresh\+Bridge()}{refreshBridge()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::refresh\+Bridge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a6d10a493cf2189f9a949c12828b499c2}{}\label{classLightManagementWidget_a6d10a493cf2189f9a949c12828b499c2}
+
+
+Function that creates a new H\+T\+TP Client and generates a Client G\+ET request to access the Hue A\+PI for the current \hyperlink{classBridge}{Bridge}. Calls \hyperlink{classLightManagementWidget_aef0c2a180f37b97769e39a52a9fce257}{refresh\+Bridge\+Http()} function once client is done the G\+ET call to handle the response. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!refresh\+Bridge\+Http@{refresh\+Bridge\+Http}}
+\index{refresh\+Bridge\+Http@{refresh\+Bridge\+Http}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{refresh\+Bridge\+Http(boost\+::system\+::error\+\_\+code err, const Wt\+::\+Http\+::\+Message \&response)}{refreshBridgeHttp(boost::system::error_code err, const Wt::Http::Message &response)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::refresh\+Bridge\+Http (
+\begin{DoxyParamCaption}
+\item[{boost\+::system\+::error\+\_\+code}]{err, }
+\item[{const Wt\+::\+Http\+::\+Message \&}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_aef0c2a180f37b97769e39a52a9fce257}{}\label{classLightManagementWidget_aef0c2a180f37b97769e39a52a9fce257}
+
+
+Function to handle the Http response generated by the Wt Http Client object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$err} & stores the error code generated by an Http request, null if request was successful \\
+\hline
+{\em \&response} & stores the response message generated by the Http request\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!remove\+Group@{remove\+Group}}
+\index{remove\+Group@{remove\+Group}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{remove\+Group(\+Group $\ast$group)}{removeGroup(Group *group)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::remove\+Group (
+\begin{DoxyParamCaption}
+\item[{{\bf Group} $\ast$}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_aa05013c523ad75a8e5cf76f1698ce33e}{}\label{classLightManagementWidget_aa05013c523ad75a8e5cf76f1698ce33e}
+
+
+Remove group function, creates a J\+S\+ON request to remove the selected group from the current bridge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & is the group object to remove from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!remove\+Light@{remove\+Light}}
+\index{remove\+Light@{remove\+Light}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{remove\+Light(\+Light $\ast$light)}{removeLight(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::remove\+Light (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_afc4ccdbe0e7fe288e3a76284c304be6f}{}\label{classLightManagementWidget_afc4ccdbe0e7fe288e3a76284c304be6f}
+
+
+Remove lights function, removes the selected light from the current bridge. Does not work on Hue Emulator but will work with real bridges. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object to remove from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!remove\+Schedule@{remove\+Schedule}}
+\index{remove\+Schedule@{remove\+Schedule}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{remove\+Schedule(\+Schedule $\ast$schedule)}{removeSchedule(Schedule *schedule)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::remove\+Schedule (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule} $\ast$}]{schedule}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_af654e9b80fa36c3bde02464907d2745e}{}\label{classLightManagementWidget_af654e9b80fa36c3bde02464907d2745e}
+
+
+Remove schedule function, creates a J\+S\+ON request to remove the selected schedule from the current bridge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schedule} & is the schedule object to remove from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update@{update}}
+\index{update@{update}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classLightManagementWidget_adc85e9100ac03e670cf0a9dc5d271058}{}\label{classLightManagementWidget_adc85e9100ac03e670cf0a9dc5d271058}
+
+
+Update function, clears the widget and re-\/populates with elements of the light management. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Group\+Info@{update\+Group\+Info}}
+\index{update\+Group\+Info@{update\+Group\+Info}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Group\+Info(\+Group $\ast$group)}{updateGroupInfo(Group *group)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Group\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Group} $\ast$}]{group}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_aa121e339ea3b4b7df1d2c60fffc01cd2}{}\label{classLightManagementWidget_aa121e339ea3b4b7df1d2c60fffc01cd2}
+
+
+Update groups function, creates a J\+S\+ON request to change properties of a given group based on user\textquotesingle{}s inputs in the edit group dialog box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group} & is the group object to update from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Groups\+Table@{update\+Groups\+Table}}
+\index{update\+Groups\+Table@{update\+Groups\+Table}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Groups\+Table()}{updateGroupsTable()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Groups\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_aaf5913f9aa16aaf3d70c929f606851c1}{}\label{classLightManagementWidget_aaf5913f9aa16aaf3d70c929f606851c1}
+
+
+Update groups table function, clears the current table and re-\/populates it with all the groups that are in the bridge. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Light\+Bri@{update\+Light\+Bri}}
+\index{update\+Light\+Bri@{update\+Light\+Bri}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Light\+Bri(\+W\+Slider $\ast$slider\+\_\+, Light $\ast$light)}{updateLightBri(WSlider *slider_, Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Light\+Bri (
+\begin{DoxyParamCaption}
+\item[{W\+Slider $\ast$}]{slider\+\_\+, }
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a147fb03b68b3caf8744d10c78b26caff}{}\label{classLightManagementWidget_a147fb03b68b3caf8744d10c78b26caff}
+
+
+Update brightness function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s brightness value given the brightness slider\textquotesingle{}s value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slider\+\_\+} & is the brightness slider that contains a value between 0-\/254. \\
+\hline
+{\em light} & is the light object to update the brightness value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Light\+HS@{update\+Light\+HS}}
+\index{update\+Light\+HS@{update\+Light\+HS}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Light\+H\+S(\+Light $\ast$light)}{updateLightHS(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Light\+HS (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a25f87c6906d4f665f17006189161f8ad}{}\label{classLightManagementWidget_a25f87c6906d4f665f17006189161f8ad}
+
+
+Update HS function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s hue, saturation, brightness, and transition time values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object to update.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Light\+Info@{update\+Light\+Info}}
+\index{update\+Light\+Info@{update\+Light\+Info}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Light\+Info(\+Light $\ast$light)}{updateLightInfo(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Light\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a9455da3d378d78c2840eafa04ea37294}{}\label{classLightManagementWidget_a9455da3d378d78c2840eafa04ea37294}
+
+
+Update lights function, creates a J\+S\+ON request to change properties of a given light based on user\textquotesingle{}s inputs in the edit light dialog box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object to update from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Light\+On@{update\+Light\+On}}
+\index{update\+Light\+On@{update\+Light\+On}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Light\+On(\+W\+Push\+Button $\ast$button\+\_\+, Light $\ast$light)}{updateLightOn(WPushButton *button_, Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Light\+On (
+\begin{DoxyParamCaption}
+\item[{W\+Push\+Button $\ast$}]{button\+\_\+, }
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_abbb93168a42c74301715f6da39ce0040}{}\label{classLightManagementWidget_abbb93168a42c74301715f6da39ce0040}
+
+
+Update on/off function, creates a J\+S\+ON request to toggle the selected light\textquotesingle{}s on/off value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button\+\_\+} & is the clickable button that contains on/off value. \\
+\hline
+{\em light} & is the light object to update the on/off value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Lights\+Table@{update\+Lights\+Table}}
+\index{update\+Lights\+Table@{update\+Lights\+Table}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Lights\+Table()}{updateLightsTable()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Lights\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a80e917263bea4c99ca9182fb57ce0993}{}\label{classLightManagementWidget_a80e917263bea4c99ca9182fb57ce0993}
+
+
+Update lights table function, clears the current table and re-\/populates it with all the lights that are in the bridge. The user can edit the properties of lights from this table. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Light\+XY@{update\+Light\+XY}}
+\index{update\+Light\+XY@{update\+Light\+XY}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Light\+X\+Y(\+Light $\ast$light)}{updateLightXY(Light *light)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Light\+XY (
+\begin{DoxyParamCaption}
+\item[{{\bf Light} $\ast$}]{light}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a559f5c7680b14415216e00919c01dd3c}{}\label{classLightManagementWidget_a559f5c7680b14415216e00919c01dd3c}
+
+
+Update light\textquotesingle{}s XY function, creates a J\+S\+ON request to update the selected light\textquotesingle{}s color value given the XY values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em light} & is the light object to update the XY value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Schedule\+Info@{update\+Schedule\+Info}}
+\index{update\+Schedule\+Info@{update\+Schedule\+Info}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Schedule\+Info(\+Schedule $\ast$schedule)}{updateScheduleInfo(Schedule *schedule)}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Schedule\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule} $\ast$}]{schedule}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_ac6a0c7163e0e383c55d72490d1ded36b}{}\label{classLightManagementWidget_ac6a0c7163e0e383c55d72490d1ded36b}
+
+
+Update schedule function, creates a J\+S\+ON request to change properties of a given schedule based on user\textquotesingle{}s inputs in the edit schedule dialog box. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schedule} & is the schedule object to update from the bridge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!update\+Schedules\+Table@{update\+Schedules\+Table}}
+\index{update\+Schedules\+Table@{update\+Schedules\+Table}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{update\+Schedules\+Table()}{updateSchedulesTable()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::update\+Schedules\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a8269fdb02b41728a474d07830743b61f}{}\label{classLightManagementWidget_a8269fdb02b41728a474d07830743b61f}
+
+
+Update schedules table function, clears the current table and re-\/populates it with all the schedules that are in the bridge. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!view\+Groups\+Widget@{view\+Groups\+Widget}}
+\index{view\+Groups\+Widget@{view\+Groups\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{view\+Groups\+Widget()}{viewGroupsWidget()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::view\+Groups\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a0ba71461f9463f07373bafff62ce017e}{}\label{classLightManagementWidget_a0ba71461f9463f07373bafff62ce017e}
+
+
+View groups function, sets the current widget shown to groups widget when clicked on the menu. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!view\+Lights\+Widget@{view\+Lights\+Widget}}
+\index{view\+Lights\+Widget@{view\+Lights\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{view\+Lights\+Widget()}{viewLightsWidget()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::view\+Lights\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_acd9a32efacbccb61424056839748c283}{}\label{classLightManagementWidget_acd9a32efacbccb61424056839748c283}
+
+
+View lights function, sets the current widget to the light widget when clicked on the menu. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!view\+Overview\+Widget@{view\+Overview\+Widget}}
+\index{view\+Overview\+Widget@{view\+Overview\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{view\+Overview\+Widget()}{viewOverviewWidget()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::view\+Overview\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_ae2c05678777e26cc117dc9e3b1e6d482}{}\label{classLightManagementWidget_ae2c05678777e26cc117dc9e3b1e6d482}
+
+
+View overview function, sets the current widget to the overview widget when clicked on the menu. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Light\+Management\+Widget@{Light\+Management\+Widget}!view\+Schedules\+Widget@{view\+Schedules\+Widget}}
+\index{view\+Schedules\+Widget@{view\+Schedules\+Widget}!Light\+Management\+Widget@{Light\+Management\+Widget}}
+\subsubsection[{\texorpdfstring{view\+Schedules\+Widget()}{viewSchedulesWidget()}}]{\setlength{\rightskip}{0pt plus 5cm}void Light\+Management\+Widget\+::view\+Schedules\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLightManagementWidget_a62809bb5bcf8a5a87ed248d9c5880a6c}{}\label{classLightManagementWidget_a62809bb5bcf8a5a87ed248d9c5880a6c}
+
+
+View schedule function, sets the current widget shown to schedule widget when clicked on the menu. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Light\+Management\+Widget.\+h\item 
+src/\hyperlink{LightManagementWidget_8cpp}{Light\+Management\+Widget.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{classLoginWidget}{}\section{Login\+Widget Class Reference}
+\label{classLoginWidget}\index{Login\+Widget@{Login\+Widget}}
+Inheritance diagram for Login\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLoginWidget}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLoginWidget_a52aff5acb69d4510b807a583ec03bfec}{Login\+Widget} (Wt\+::\+W\+Container\+Widget $\ast$parent=0, \hyperlink{classAccount}{Account} $\ast$account=0, \hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$main=0)
+\begin{DoxyCompactList}\small\item\em Login Widget constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classLoginWidget_acc7476881ad942e634beafdeb4bdb971}{update} ()
+\begin{DoxyCompactList}\small\item\em Update function, clears the widget and re-\/populates with elements of the login screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classLoginWidget_af42b318f75370fd66e74c400bae44a4d}{submit} ()\hypertarget{classLoginWidget_af42b318f75370fd66e74c400bae44a4d}{}\label{classLoginWidget_af42b318f75370fd66e74c400bae44a4d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLoginWidget_af42b318f75370fd66e74c400bae44a4d}{submit()} function, triggered when user presses login button, displays any applicable warning messages and/or checks user database for authentication. Finally, it redirects to the bridge screen after successful login. \end{DoxyCompactList}\item 
+bool \hyperlink{classLoginWidget_aa33a1ece55b698e9d5b8c91413715b36}{check\+Credentials} (std\+::string username, std\+::string password)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classLoginWidget_aa33a1ece55b698e9d5b8c91413715b36}{check\+Credentials()} function, checks for username.\+txt, then compares encrypted version of the user\textquotesingle{}s password \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries id\+Edit\+\_\+}\hypertarget{classLoginWidget_abc73734457aad449ae29568968397304}{}\label{classLoginWidget_abc73734457aad449ae29568968397304}
+
+\item 
+Wt\+::\+W\+Line\+Edit $\ast$ {\bfseries pw\+Edit\+\_\+}\hypertarget{classLoginWidget_aa1b7c49a9d9a3d742f1a8f6a35c2071c}{}\label{classLoginWidget_aa1b7c49a9d9a3d742f1a8f6a35c2071c}
+
+\item 
+Wt\+::\+W\+Push\+Button $\ast$ {\bfseries login\+Button\+\_\+}\hypertarget{classLoginWidget_aa4b647e9a3ef1beea1695b4ba4a072d2}{}\label{classLoginWidget_aa4b647e9a3ef1beea1695b4ba4a072d2}
+
+\item 
+Wt\+::\+W\+Text $\ast$ {\bfseries status\+Message\+\_\+}\hypertarget{classLoginWidget_adb0cb4c69680f0210583b7b1cabc3f25}{}\label{classLoginWidget_adb0cb4c69680f0210583b7b1cabc3f25}
+
+\item 
+Wt\+::\+W\+Reg\+Exp\+Validator $\ast$ {\bfseries username\+Validator\+\_\+}\hypertarget{classLoginWidget_a3f2aa506217f54e466fb3954cfb77a12}{}\label{classLoginWidget_a3f2aa506217f54e466fb3954cfb77a12}
+
+\item 
+Wt\+::\+W\+Length\+Validator $\ast$ {\bfseries password\+Length\+Validator\+\_\+}\hypertarget{classLoginWidget_a524d5c1e4c3cb20d050ce272cdfac23e}{}\label{classLoginWidget_a524d5c1e4c3cb20d050ce272cdfac23e}
+
+\item 
+\hyperlink{classWelcomeScreen}{Welcome\+Screen} $\ast$ {\bfseries parent\+\_\+}\hypertarget{classLoginWidget_a29e3645e6f24bcf909ba28665cd3663c}{}\label{classLoginWidget_a29e3645e6f24bcf909ba28665cd3663c}
+
+\item 
+\hyperlink{classAccount}{Account} $\ast$ {\bfseries account\+\_\+}\hypertarget{classLoginWidget_ac4303f10fd4fcd7a6ff43dae796f90e7}{}\label{classLoginWidget_ac4303f10fd4fcd7a6ff43dae796f90e7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Login\+Widget@{Login\+Widget}!Login\+Widget@{Login\+Widget}}
+\index{Login\+Widget@{Login\+Widget}!Login\+Widget@{Login\+Widget}}
+\subsubsection[{\texorpdfstring{Login\+Widget(\+Wt\+::\+W\+Container\+Widget $\ast$parent=0, Account $\ast$account=0, Welcome\+Screen $\ast$main=0)}{LoginWidget(Wt::WContainerWidget *parent=0, Account *account=0, WelcomeScreen *main=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Login\+Widget\+::\+Login\+Widget (
+\begin{DoxyParamCaption}
+\item[{Wt\+::\+W\+Container\+Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{{\bf Account} $\ast$}]{account = {\ttfamily 0}, }
+\item[{{\bf Welcome\+Screen} $\ast$}]{main = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classLoginWidget_a52aff5acb69d4510b807a583ec03bfec}{}\label{classLoginWidget_a52aff5acb69d4510b807a583ec03bfec}
+
+
+Login Widget constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$parent} & is a pointer the the containerwidget that stores this widget \\
+\hline
+{\em $\ast$account} & is a pointer to the user account object \\
+\hline
+{\em $\ast$main} & is a pointer to the app\textquotesingle{}s welcome screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Login\+Widget@{Login\+Widget}!check\+Credentials@{check\+Credentials}}
+\index{check\+Credentials@{check\+Credentials}!Login\+Widget@{Login\+Widget}}
+\subsubsection[{\texorpdfstring{check\+Credentials(std\+::string username, std\+::string password)}{checkCredentials(std::string username, std::string password)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Login\+Widget\+::check\+Credentials (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{username, }
+\item[{std\+::string}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classLoginWidget_aa33a1ece55b698e9d5b8c91413715b36}{}\label{classLoginWidget_aa33a1ece55b698e9d5b8c91413715b36}
+
+
+\hyperlink{classLoginWidget_aa33a1ece55b698e9d5b8c91413715b36}{check\+Credentials()} function, checks for username.\+txt, then compares encrypted version of the user\textquotesingle{}s password 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & is a string representing the user\textquotesingle{}s inputted username \\
+\hline
+{\em password} & is a string representing the user\textquotesingle{}s inputted password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool representing if login successful 
+\end{DoxyReturn}
+\index{Login\+Widget@{Login\+Widget}!update@{update}}
+\index{update@{update}!Login\+Widget@{Login\+Widget}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Login\+Widget\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classLoginWidget_acc7476881ad942e634beafdeb4bdb971}{}\label{classLoginWidget_acc7476881ad942e634beafdeb4bdb971}
+
+
+Update function, clears the widget and re-\/populates with elements of the login screen. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Login\+Widget.\+h\item 
+src/\hyperlink{LoginWidget_8cpp}{Login\+Widget.\+cpp}\end{DoxyCompactItemize}

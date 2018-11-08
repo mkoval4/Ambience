@@ -1,0 +1,58 @@
+.title {
+  color: DimGray;
+  text-align: center;
+  font-family: "Palatino";
+  font-size: 28px;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: lightblue;
+}
+ 
+button[type=button] {
+    background-color: #1D72F9;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.inplace:hover {
+   background-color: gray;
+}
+
+th {
+	background-color: #2789C3;
+    color: white;
+    border: 1px solid black;
+   	padding: 4px;
+   	text-align: center;
+   	vertical-align: middle;
+}
+
+td {
+   	border: 1px solid black;
+   	padding: 8px;
+   	text-align: center;
+   	vertical-align: middle;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+.pic-contain {
+	padding-left: 1%;
+}
+
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+tr:nth-child(odd){background-color: #ffffff;}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}

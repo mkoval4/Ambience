@@ -1,0 +1,32 @@
+\hypertarget{Hash_8cpp}{}\section{src/\+Hash.cpp File Reference}
+\label{Hash_8cpp}\index{src/\+Hash.\+cpp@{src/\+Hash.\+cpp}}
+
+
+CS 3307, Hue \hyperlink{classLight}{Light} Application password encryption hash function.  
+
+
+{\ttfamily \#include \char`\"{}Hash.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$openssl/sha.\+h$>$}\\*
+
+
+\subsection{Detailed Description}
+CS 3307, Hue \hyperlink{classLight}{Light} Application password encryption hash function. 
+
+\begin{DoxyAuthor}{Author}
+CS 3307 -\/ Team 13 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/7/2017 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+\hypertarget{WelcomeScreen_8cpp_DESCRIPTION}{}\subsection{D\+E\+S\+C\+R\+I\+P\+T\+I\+ON}\label{WelcomeScreen_8cpp_DESCRIPTION}
+\begin{DoxyVerb}        This class represents the Hash function. A SHA256 cryptographic hashing function which the
+        password can be run through before storage.
+        Two of the same passwords run through the same function would return the same hash,
+        however, it is near impossible to reverse-engineer this function to take the hash
+        and return the plain-text password\end{DoxyVerb}

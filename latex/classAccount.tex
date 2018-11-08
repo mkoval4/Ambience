@@ -1,0 +1,216 @@
+\hypertarget{classAccount}{}\section{Account Class Reference}
+\label{classAccount}\index{Account@{Account}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAccount_aea61ea2175658b5cb42f9098a1824091}{Account} (string fn, string ln, string em, string pw)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAccount}{Account} constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classAccount_a569c9ef0e42b9157690b4ceb646daba8}{$\sim$\+Account} ()\hypertarget{classAccount_a569c9ef0e42b9157690b4ceb646daba8}{}\label{classAccount_a569c9ef0e42b9157690b4ceb646daba8}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAccount}{Account} destructor. \end{DoxyCompactList}\item 
+string {\bfseries get\+First\+Name} ()\hypertarget{classAccount_aea5b18f537c4ab3318f807d28608d769}{}\label{classAccount_aea5b18f537c4ab3318f807d28608d769}
+
+\item 
+string {\bfseries get\+Last\+Name} ()\hypertarget{classAccount_aefcb8adf5b6eb493a6d9984868ea4989}{}\label{classAccount_aefcb8adf5b6eb493a6d9984868ea4989}
+
+\item 
+string {\bfseries get\+Email} ()\hypertarget{classAccount_a76267f15ded99bc30a768df20c7a7470}{}\label{classAccount_a76267f15ded99bc30a768df20c7a7470}
+
+\item 
+string {\bfseries get\+Password} ()\hypertarget{classAccount_a4ceee3a414012198fa0f9c9c6e2b9c7c}{}\label{classAccount_a4ceee3a414012198fa0f9c9c6e2b9c7c}
+
+\item 
+bool {\bfseries is\+Auth} ()\hypertarget{classAccount_a220de6a3d6eb5b5906713bfb61ae4f85}{}\label{classAccount_a220de6a3d6eb5b5906713bfb61ae4f85}
+
+\item 
+vector$<$ \hyperlink{classBridge}{Bridge} $>$ {\bfseries get\+Bridges} ()\hypertarget{classAccount_a31a506edcb3a47e66b298efeba787964}{}\label{classAccount_a31a506edcb3a47e66b298efeba787964}
+
+\item 
+int {\bfseries get\+Num\+Bridges} ()\hypertarget{classAccount_a18278e5f23ae633233fed76370d9c725}{}\label{classAccount_a18278e5f23ae633233fed76370d9c725}
+
+\item 
+\hyperlink{classBridge}{Bridge} $\ast$ \hyperlink{classAccount_a99e5b7d9b556d6c61050384a93ddc28f}{get\+Bridge\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a \hyperlink{classBridge}{Bridge} in the user account. \end{DoxyCompactList}\item 
+void {\bfseries set\+First\+Name} (string fn)\hypertarget{classAccount_a0b85870f9800bfe8511bdf29e7bf8401}{}\label{classAccount_a0b85870f9800bfe8511bdf29e7bf8401}
+
+\item 
+void {\bfseries set\+Last\+Name} (string ln)\hypertarget{classAccount_afae856e8a22f025e49eb67b1d1a44ece}{}\label{classAccount_afae856e8a22f025e49eb67b1d1a44ece}
+
+\item 
+void {\bfseries set\+Email} (string em)\hypertarget{classAccount_acb2250a8de021ec3623e022ba15eba98}{}\label{classAccount_acb2250a8de021ec3623e022ba15eba98}
+
+\item 
+void {\bfseries set\+Password} (string pw)\hypertarget{classAccount_ab1527d71089a635948c59fdc815797ca}{}\label{classAccount_ab1527d71089a635948c59fdc815797ca}
+
+\item 
+void {\bfseries set\+Auth} (bool val)\hypertarget{classAccount_a073cd6a4b7282e142e7e0ce51af5336a}{}\label{classAccount_a073cd6a4b7282e142e7e0ce51af5336a}
+
+\item 
+void \hyperlink{classAccount_ac15cacc5ee4a7fdc3a397af0af0735a2}{add\+Bridge} (\hyperlink{classBridge}{Bridge} br)
+\begin{DoxyCompactList}\small\item\em Add a \hyperlink{classBridge}{Bridge} to the user account. \end{DoxyCompactList}\item 
+void \hyperlink{classAccount_a7dc637a4aa1f5711d1177a1c275aee68}{add\+Bridge} (string bname, string bloc, string bip, string bport, string buser)
+\begin{DoxyCompactList}\small\item\em Add a \hyperlink{classBridge}{Bridge} to the user account. \end{DoxyCompactList}\item 
+void \hyperlink{classAccount_ae1cbf1a3aaa6d6e41081664961c184d2}{remove\+Bridge\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Remove a \hyperlink{classBridge}{Bridge} from the user account. \end{DoxyCompactList}\item 
+void \hyperlink{classAccount_ab0a3286b4529e632c1cdd35f9059a113}{write\+File} ()
+\begin{DoxyCompactList}\small\item\em Write \hyperlink{classAccount}{Account} object to the user account data file stored in application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries first\+Name\+\_\+}\hypertarget{classAccount_acbbc6de97f82d17d21f808795232bfa5}{}\label{classAccount_acbbc6de97f82d17d21f808795232bfa5}
+
+\item 
+string {\bfseries last\+Name\+\_\+}\hypertarget{classAccount_ab36032763836b5d62647fc1e5fdaf6c9}{}\label{classAccount_ab36032763836b5d62647fc1e5fdaf6c9}
+
+\item 
+string {\bfseries email\+\_\+}\hypertarget{classAccount_ad98762d2c6bcec3dfbbb412afcb857dd}{}\label{classAccount_ad98762d2c6bcec3dfbbb412afcb857dd}
+
+\item 
+string {\bfseries password\+\_\+}\hypertarget{classAccount_a13a0787c31741386adb1f88c1f0bc70e}{}\label{classAccount_a13a0787c31741386adb1f88c1f0bc70e}
+
+\item 
+bool {\bfseries auth\+\_\+}\hypertarget{classAccount_a5eaa84b340dbb109672e51943b9b072e}{}\label{classAccount_a5eaa84b340dbb109672e51943b9b072e}
+
+\item 
+vector$<$ \hyperlink{classBridge}{Bridge} $>$ {\bfseries bridges}\hypertarget{classAccount_a009c8f3fa2e794d28ba6d8d8620c9c5b}{}\label{classAccount_a009c8f3fa2e794d28ba6d8d8620c9c5b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Account@{Account}!Account@{Account}}
+\index{Account@{Account}!Account@{Account}}
+\subsubsection[{\texorpdfstring{Account(string fn, string ln, string em, string pw)}{Account(string fn, string ln, string em, string pw)}}]{\setlength{\rightskip}{0pt plus 5cm}Account\+::\+Account (
+\begin{DoxyParamCaption}
+\item[{string}]{fn, }
+\item[{string}]{ln, }
+\item[{string}]{em, }
+\item[{string}]{pw}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_aea61ea2175658b5cb42f9098a1824091}{}\label{classAccount_aea61ea2175658b5cb42f9098a1824091}
+
+
+\hyperlink{classAccount}{Account} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & is the first name of the user \\
+\hline
+{\em ln} & is the last name of the user \\
+\hline
+{\em em} & is the email of the user \\
+\hline
+{\em pw} & is the hashed password of the user \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Account@{Account}!add\+Bridge@{add\+Bridge}}
+\index{add\+Bridge@{add\+Bridge}!Account@{Account}}
+\subsubsection[{\texorpdfstring{add\+Bridge(\+Bridge br)}{addBridge(Bridge br)}}]{\setlength{\rightskip}{0pt plus 5cm}void Account\+::add\+Bridge (
+\begin{DoxyParamCaption}
+\item[{{\bf Bridge}}]{br}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_ac15cacc5ee4a7fdc3a397af0af0735a2}{}\label{classAccount_ac15cacc5ee4a7fdc3a397af0af0735a2}
+
+
+Add a \hyperlink{classBridge}{Bridge} to the user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em br} & an instantiated \hyperlink{classBridge}{Bridge} object to add to the account\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Account@{Account}!add\+Bridge@{add\+Bridge}}
+\index{add\+Bridge@{add\+Bridge}!Account@{Account}}
+\subsubsection[{\texorpdfstring{add\+Bridge(string bname, string bloc, string bip, string bport, string buser)}{addBridge(string bname, string bloc, string bip, string bport, string buser)}}]{\setlength{\rightskip}{0pt plus 5cm}void Account\+::add\+Bridge (
+\begin{DoxyParamCaption}
+\item[{string}]{bname, }
+\item[{string}]{bloc, }
+\item[{string}]{bip, }
+\item[{string}]{bport, }
+\item[{string}]{buser}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_a7dc637a4aa1f5711d1177a1c275aee68}{}\label{classAccount_a7dc637a4aa1f5711d1177a1c275aee68}
+
+
+Add a \hyperlink{classBridge}{Bridge} to the user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bname} & name of bridge to add to user account \\
+\hline
+{\em bloc} & location of bridge to add to user account \\
+\hline
+{\em bip} & ip of bridge to add to user account \\
+\hline
+{\em bport} & port of bridge to add to user account \\
+\hline
+{\em buser} & username of bridge to add to user account\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Account@{Account}!get\+Bridge\+At@{get\+Bridge\+At}}
+\index{get\+Bridge\+At@{get\+Bridge\+At}!Account@{Account}}
+\subsubsection[{\texorpdfstring{get\+Bridge\+At(int index)}{getBridgeAt(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bridge} $\ast$ Account\+::get\+Bridge\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_a99e5b7d9b556d6c61050384a93ddc28f}{}\label{classAccount_a99e5b7d9b556d6c61050384a93ddc28f}
+
+
+Returns a pointer to a \hyperlink{classBridge}{Bridge} in the user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the position of the \hyperlink{classBridge}{Bridge} in the vector to retrieve (0 is first position)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to \hyperlink{classBridge}{Bridge} object in user account 
+\end{DoxyReturn}
+\index{Account@{Account}!remove\+Bridge\+At@{remove\+Bridge\+At}}
+\index{remove\+Bridge\+At@{remove\+Bridge\+At}!Account@{Account}}
+\subsubsection[{\texorpdfstring{remove\+Bridge\+At(int index)}{removeBridgeAt(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Account\+::remove\+Bridge\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_ae1cbf1a3aaa6d6e41081664961c184d2}{}\label{classAccount_ae1cbf1a3aaa6d6e41081664961c184d2}
+
+
+Remove a \hyperlink{classBridge}{Bridge} from the user account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the position of the \hyperlink{classBridge}{Bridge} in the vector to remove (0 is first position)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{Account@{Account}!write\+File@{write\+File}}
+\index{write\+File@{write\+File}!Account@{Account}}
+\subsubsection[{\texorpdfstring{write\+File()}{writeFile()}}]{\setlength{\rightskip}{0pt plus 5cm}void Account\+::write\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAccount_ab0a3286b4529e632c1cdd35f9059a113}{}\label{classAccount_ab0a3286b4529e632c1cdd35f9059a113}
+
+
+Write \hyperlink{classAccount}{Account} object to the user account data file stored in application. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Account.\+h\item 
+src/\hyperlink{Account_8cpp}{Account.\+cpp}\end{DoxyCompactItemize}
